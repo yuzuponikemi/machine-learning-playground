@@ -55,3 +55,8 @@ dmypy.json
 *.log
 .env
 .env.local
+
+# Generated model files and training artifacts
+models/
+catboost_info/
+**/catboost_info/
