@@ -1,15 +1,23 @@
 # Machine Learning Playground
 
-機械学習の基礎から実践まで学べる、包括的な日本語教育用リポジトリです。
+機械学習の基礎から最新の生成モデルまで学べる、包括的な日本語教育用リポジトリです。
 
 ## 📚 概要
 
-このリポジトリには、scikit-learnを使った機械学習の学習教材が含まれています。
+このリポジトリには、機械学習の基礎から拡散モデル・画像生成AIまで、2つの学習コースが含まれています。
 日本語の教科書フレームワークに基づき、初心者でも体系的に学べるように設計されています。
+
+### 🎓 コース概要
+
+#### 📊 機械学習基礎コース（Notebooks 00-28）
+scikit-learnを使った機械学習の基礎から実践まで
+
+#### 🎨 生成モデルコース（Notebooks 30-45）
+PyTorchを使った拡散モデル・画像生成AIの理論と実装
 
 ### 特徴
 
-- ✅ **29個の包括的なノートブック**: 基礎から実践Kaggle競技まで網羅
+- ✅ **45個の包括的なノートブック**: 基礎から最新の生成モデルまで網羅
 - ✅ **詳細な日本語説明**: 10,000文字以上の解説
 - ✅ **豊富なコード コメント**: 200行以上の詳細な説明
 - ✅ **実世界の応用例**: Kaggleコンペティション実践
@@ -17,40 +25,42 @@
 - ✅ **よくあるエラー解説**: トラブルシューティング
 - ✅ **GBDT完全マスター**: LightGBM、XGBoost、CatBoost
 - ✅ **Kaggle Top 30%達成**: 実践的なテクニック
+- ✅ **拡散モデル実装**: DDPM、VAE、Stable Diffusion
 
 ## 🗂️ ディレクトリ構造
 
 ```
 machine-learning-playground/
 ├── notebooks/                         # 📓 Jupyter Notebooks（学習教材）
-│   ├── 00_quick_start_improved_v2.ipynb
-│   ├── 01_data_simulation_basics_improved_v2.ipynb
-│   ├── 02_preprocessing_and_feature_engineering_improved_v2.ipynb
-│   ├── 03_model_evaluation_metrics_improved_v2.ipynb
-│   ├── 04_linear_models_simulation_improved_v2.ipynb
-│   ├── 05_tree_and_ensemble_models_improved_v2.ipynb
-│   ├── 06_svm_and_kernels_improved_v2.ipynb
-│   ├── 07_mlp_fundamentals_improved_v2.ipynb
-│   ├── 08_mlp_parameter_space_exploration_improved_v2.ipynb
-│   ├── 09_mlp_regression_waveforms_improved_v2.ipynb
-│   ├── 10_automated_hyperparameter_tuning_improved_v2.ipynb
-│   ├── 11_model_comparison_and_selection_improved_v2.ipynb
-│   └── 12_complete_ml_pipeline_improved_v2.ipynb
+│   ├── fundamentals/                 # 00-12: 機械学習基礎
+│   │   ├── 00_quick_start_improved_v2.ipynb
+│   │   ├── 01_data_simulation_basics_improved_v2.ipynb
+│   │   └── ...
+│   │
+│   ├── gbdt/                         # 13-22: GBDT マスター
+│   │   ├── 13_gbdt_introduction_improved_v2.ipynb
+│   │   ├── 14_catboost_categorical_improved_v2.ipynb
+│   │   └── ...
+│   │
+│   ├── advanced/                     # 23-28: 高度なトピック
+│   │   ├── 23_imbalanced_data_handling_improved_v2.ipynb
+│   │   ├── 24_time_series_feature_engineering_improved_v2.ipynb
+│   │   └── ...
+│   │
+│   └── generative/                   # 30-45: 生成モデル 🆕
+│       ├── 30_probability_and_normal_distribution_v1.ipynb
+│       ├── 31_maximum_likelihood_estimation_v1.ipynb
+│       └── ... (拡散モデル、VAE、Stable Diffusion)
 │
 ├── scripts/                           # 🔧 ユーティリティスクリプト
 │   ├── notebook_improvements/        # ノートブック改善用スクリプト
-│   │   ├── README.md
-│   │   ├── analyze_notebooks.py
-│   │   ├── improve_all_notebooks.py
-│   │   └── ...
-│   │
 │   └── examples/                     # サンプルスクリプト
-│       ├── README.md
-│       ├── linearRegression.py
-│       ├── naivebayes.py
-│       └── ...
 │
-├── ML_LEARNING_PLAN.md               # 📖 学習計画ガイド
+├── ML_LEARNING_PLAN.md               # 📖 機械学習基礎の学習計画
+├── DIFFUSION_MODELS_CURRICULUM.md   # 🎨 生成モデルカリキュラム 🆕
+├── NOTEBOOK_GUIDELINES.md            # 📋 ノートブック作成ガイドライン
+├── requirements.txt                   # 機械学習基礎用パッケージ
+├── requirements-generative.txt       # 生成モデル用パッケージ 🆕
 └── README.md                         # このファイル
 ```
 
@@ -68,12 +78,20 @@ machine-learning-playground/
 git clone https://github.com/yuzuponikemi/machine-learning-playground.git
 cd machine-learning-playground
 
-# 依存パッケージのインストール（推奨: 仮想環境を使用）
+# 機械学習基礎コース用パッケージのインストール
 pip install -r requirements.txt
+
+# 生成モデルコース用パッケージのインストール（オプション）
+pip install -r requirements-generative.txt
 
 # Jupyter Notebookの起動
 jupyter notebook notebooks/
 ```
+
+### 推奨される学習順序
+
+1. **機械学習基礎コース**（Notebooks 00-28）から開始
+2. PyTorchの基礎を理解したら **生成モデルコース**（Notebooks 30-45）へ進む
 
 ## 📖 学習カリキュラム
 
@@ -146,7 +164,73 @@ jupyter notebook notebooks/
 | 27 | Kaggle完全ワークフロー | コンペティション攻略法 | 180-240分 | ★★★★★ |
 | 28 | 総合演習プロジェクト | 独自のML プロジェクト作成 | 300-400分 | ★★★★★ |
 
-**合計推定時間**: 140-190時間（約3-6ヶ月の学習期間）
+**機械学習基礎コース合計推定時間**: 140-190時間（約3-6ヶ月）
+
+---
+
+## 🎨 生成モデルコース（Notebooks 30-45）
+
+### 前提知識
+- 機械学習基礎コース（Notebooks 00-12）の完了推奨
+- Pythonプログラミングの基礎
+- 基礎的な数学（微分、行列計算、確率）
+
+### Phase 1: 確率統計の基礎（推定時間: 10-12時間）
+
+| # | ノートブック | 内容 | 時間 | 難易度 |
+|---|------------|------|------|--------|
+| 30 | 正規分布と確率の基礎 | 確率分布、中心極限定理 | 120-150分 | ★★☆☆☆ |
+| 31 | 最尤推定 | 生成モデルの基礎 | 120-150分 | ★★★☆☆ |
+| 32 | 多次元正規分布 | 共分散行列、可視化 | 120-150分 | ★★★☆☆ |
+
+### Phase 2: 混合モデルと最適化（推定時間: 8-10時間）
+
+| # | ノートブック | 内容 | 時間 | 難易度 |
+|---|------------|------|------|--------|
+| 33 | 混合ガウスモデル（GMM） | 多峰性分布のモデリング | 120-150分 | ★★★☆☆ |
+| 34 | EMアルゴリズム | ELBO、KLダイバージェンス | 150-180分 | ★★★★☆ |
+
+### Phase 3: PyTorchとNN（推定時間: 8-10時間）
+
+| # | ノートブック | 内容 | 時間 | 難易度 |
+|---|------------|------|------|--------|
+| 35 | PyTorch基礎と勾配法 | テンソル演算、自動微分 | 120-150分 | ★★☆☆☆ |
+| 36 | ニューラルネットワーク | MLP、MNIST分類 | 120-150分 | ★★★☆☆ |
+
+### Phase 4: 変分オートエンコーダ（推定時間: 6-8時間）
+
+| # | ノートブック | 内容 | 時間 | 難易度 |
+|---|------------|------|------|--------|
+| 37 | VAE理論 | エンコーダ・デコーダ、ELBO | 120-150分 | ★★★★☆ |
+| 38 | VAE実装 | 潜在空間、画像生成 | 150-180分 | ★★★★☆ |
+
+### Phase 5: 拡散モデル理論（推定時間: 8-10時間）
+
+| # | ノートブック | 内容 | 時間 | 難易度 |
+|---|------------|------|------|--------|
+| 39 | 拡散モデル基礎 | 拡散過程、逆拡散過程 | 150-180分 | ★★★★☆ |
+| 40 | 拡散モデルELBO | ELBO導出、数式理解 | 180-240分 | ★★★★★ |
+
+### Phase 6: 拡散モデル実装（推定時間: 10-12時間）
+
+| # | ノートブック | 内容 | 時間 | 難易度 |
+|---|------------|------|------|--------|
+| 41 | U-Netと位置エンコーディング | アーキテクチャ設計 | 150-180分 | ★★★★☆ |
+| 42 | 拡散モデル実装 | DDPM、ノイズ予測 | 180-240分 | ★★★★★ |
+| 43 | 拡散モデル訓練 | 最適化、評価指標 | 180-240分 | ★★★★★ |
+
+### Phase 7: 応用（推定時間: 8-10時間）
+
+| # | ノートブック | 内容 | 時間 | 難易度 |
+|---|------------|------|------|--------|
+| 44 | 条件付き拡散モデル | クラス条件付き生成 | 150-180分 | ★★★★☆ |
+| 45 | Stable Diffusion | CFG、Diffusersライブラリ | 180-240分 | ★★★★★ |
+
+**生成モデルコース合計推定時間**: 58-72時間（約2-3ヶ月）
+
+**全コース合計**: 198-262時間（約5-9ヶ月の学習期間）
+
+詳細は [DIFFUSION_MODELS_CURRICULUM.md](./DIFFUSION_MODELS_CURRICULUM.md) を参照
 
 ## 🎯 学習目標
 
@@ -186,6 +270,16 @@ jupyter notebook notebooks/
 - ✅ Tabularデータのディープラーニングモデルを使える
 - ✅ 完全なMLプロジェクトをポートフォリオとして作成できる
 
+### 生成モデルスキル（ノートブック 30-45）
+- ✅ 確率統計の基礎から生成モデルまでの流れを理解している
+- ✅ PyTorchでニューラルネットワークを実装できる
+- ✅ VAEを実装し、潜在空間を探索できる
+- ✅ 拡散モデルをスクラッチで実装できる
+- ✅ U-Netアーキテクチャを理解し実装できる
+- ✅ 条件付き拡散モデルで画像を生成できる
+- ✅ Stable Diffusionの仕組みを理解し、使いこなせる
+- ✅ ELBO、KLダイバージェンスの数式を導出できる
+
 ## 💡 使い方のヒント
 
 ### 効果的な学習方法
@@ -214,6 +308,7 @@ jupyter notebook notebooks/
 
 ## 🛠️ 技術スタック
 
+### 機械学習基礎コース
 - **Python**: 3.7+
 - **基礎ライブラリ**:
   - scikit-learn: 機械学習アルゴリズム
@@ -230,6 +325,22 @@ jupyter notebook notebooks/
   - Optuna: 自動ハイパーパラメータ最適化
   - SHAP: モデル解釈と説明可能性
   - Imbalanced-learn: 不均衡データ処理
+
+### 生成モデルコース 🆕
+- **Python**: 3.8+
+- **ディープラーニングフレームワーク**:
+  - PyTorch: ディープラーニングの基盤
+  - torchvision: コンピュータビジョン
+
+- **生成モデルライブラリ**:
+  - Diffusers: 拡散モデル（Stable Diffusion等）
+  - Transformers: CLIP、テキストエンコーダ
+  - accelerate: 訓練の高速化
+
+- **可視化・ユーティリティ**:
+  - Matplotlib/Seaborn: データ可視化
+  - Pillow/OpenCV: 画像処理
+  - tqdm: プログレスバー
 
 ## 📚 参考資料
 
@@ -258,10 +369,22 @@ jupyter notebook notebooks/
 - [Optuna公式](https://optuna.org/): ハイパーパラメータ最適化
 - [SHAP公式](https://shap.readthedocs.io/): モデル解釈
 
+### オンラインリソース（生成モデル） 🆕
+- [Hugging Face Diffusers](https://huggingface.co/docs/diffusers/): 拡散モデルの公式ドキュメント
+- [Lil'Log - Diffusion Models](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/): 理論解説
+- [Annotated Diffusion](https://huggingface.co/blog/annotated-diffusion): コード付き解説
+- [PyTorch Tutorials](https://pytorch.org/tutorials/): 公式チュートリアル
+
+### 推奨論文（生成モデル） 🆕
+- **DDPM (2020)**: "Denoising Diffusion Probabilistic Models" - Ho et al.
+- **Improved DDPM (2021)**: "Improved Denoising Diffusion Probabilistic Models"
+- **Latent Diffusion (2022)**: "High-Resolution Image Synthesis with Latent Diffusion Models" (Stable Diffusion)
+- **Classifier-Free Guidance (2022)**: "Classifier-Free Diffusion Guidance"
+
 ### コミュニティ
-- **Reddit**: r/MachineLearning、r/kaggle
-- **GitHub**: Kaggle Solutions（例：Kazuki Onodera氏のリポジトリ）
-- **Discord/Slack**: Kaggle公式コミュニティ
+- **Reddit**: r/MachineLearning、r/kaggle、r/StableDiffusion
+- **GitHub**: Kaggle Solutions、Diffusion Models実装例
+- **Discord/Slack**: Kaggle公式、Hugging Face コミュニティ
 
 ## 🤝 コントリビューション
 

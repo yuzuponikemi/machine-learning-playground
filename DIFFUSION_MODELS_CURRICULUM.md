@@ -40,7 +40,7 @@ PyTorch基礎 → VAE → 拡散モデル理論 → 拡散モデル実装 → �
 ### Phase 1: 確率統計の基礎（推定時間: 10-12時間）
 
 #### Notebook 30: 正規分布と確率の基礎
-**ファイル名**: `30_probability_and_normal_distribution_v1.ipynb`
+**ファイル名**: `notebooks/generative/30_probability_and_normal_distribution_v1.ipynb`
 
 | 項目 | 内容 |
 |------|------|
@@ -82,7 +82,7 @@ PyTorch基礎 → VAE → 拡散モデル理論 → 拡散モデル実装 → �
 ---
 
 #### Notebook 31: 最尤推定と生成モデルの基礎
-**ファイル名**: `31_maximum_likelihood_estimation_v1.ipynb`
+**ファイル名**: `notebooks/generative/31_maximum_likelihood_estimation_v1.ipynb`
 
 | 項目 | 内容 |
 |------|------|
@@ -126,7 +126,7 @@ PyTorch基礎 → VAE → 拡散モデル理論 → 拡散モデル実装 → �
 ---
 
 #### Notebook 32: 多次元正規分布と共分散
-**ファイル名**: `32_multivariate_normal_distribution_v1.ipynb`
+**ファイル名**: `notebooks/generative/32_multivariate_normal_distribution_v1.ipynb`
 
 | 項目 | 内容 |
 |------|------|
@@ -173,7 +173,7 @@ PyTorch基礎 → VAE → 拡散モデル理論 → 拡散モデル実装 → �
 ### Phase 2: 混合モデルと最適化（推定時間: 8-10時間）
 
 #### Notebook 33: 混合ガウスモデル（GMM）
-**ファイル名**: `33_gaussian_mixture_models_v1.ipynb`
+**ファイル名**: `notebooks/generative/33_gaussian_mixture_models_v1.ipynb`
 
 | 項目 | 内容 |
 |------|------|
@@ -215,7 +215,7 @@ PyTorch基礎 → VAE → 拡散モデル理論 → 拡散モデル実装 → �
 ---
 
 #### Notebook 34: EMアルゴリズム
-**ファイル名**: `34_expectation_maximization_algorithm_v1.ipynb`
+**ファイル名**: `notebooks/generative/34_expectation_maximization_algorithm_v1.ipynb`
 
 | 項目 | 内容 |
 |------|------|
@@ -264,7 +264,7 @@ PyTorch基礎 → VAE → 拡散モデル理論 → 拡散モデル実装 → �
 ### Phase 3: PyTorchとニューラルネットワーク（推定時間: 8-10時間）
 
 #### Notebook 35: PyTorch基礎と勾配法
-**ファイル名**: `35_pytorch_fundamentals_v1.ipynb`
+**ファイル名**: `notebooks/generative/35_pytorch_fundamentals_v1.ipynb`
 
 | 項目 | 内容 |
 |------|------|
@@ -310,7 +310,7 @@ PyTorch基礎 → VAE → 拡散モデル理論 → 拡散モデル実装 → �
 ---
 
 #### Notebook 36: ニューラルネットワークとMNIST
-**ファイル名**: `36_neural_networks_mnist_v1.ipynb`
+**ファイル名**: `notebooks/generative/36_neural_networks_mnist_v1.ipynb`
 
 | 項目 | 内容 |
 |------|------|
@@ -359,7 +359,7 @@ PyTorch基礎 → VAE → 拡散モデル理論 → 拡散モデル実装 → �
 ### Phase 4: 変分オートエンコーダ（推定時間: 6-8時間）
 
 #### Notebook 37: 変分オートエンコーダ（VAE）の理論
-**ファイル名**: `37_variational_autoencoder_theory_v1.ipynb`
+**ファイル名**: `notebooks/generative/37_variational_autoencoder_theory_v1.ipynb`
 
 | 項目 | 内容 |
 |------|------|
@@ -405,7 +405,7 @@ PyTorch基礎 → VAE → 拡散モデル理論 → 拡散モデル実装 → �
 ---
 
 #### Notebook 38: 変分オートエンコーダ（VAE）の実装
-**ファイル名**: `38_variational_autoencoder_implementation_v1.ipynb`
+**ファイル名**: `notebooks/generative/38_variational_autoencoder_implementation_v1.ipynb`
 
 | 項目 | 内容 |
 |------|------|
@@ -456,7 +456,7 @@ PyTorch基礎 → VAE → 拡散モデル理論 → 拡散モデル実装 → �
 ### Phase 5: 拡散モデルの理論（推定時間: 8-10時間）
 
 #### Notebook 39: 拡散モデルの理論（基礎編）
-**ファイル名**: `39_diffusion_models_theory_basics_v1.ipynb`
+**ファイル名**: `notebooks/generative/39_diffusion_models_theory_basics_v1.ipynb`
 
 | 項目 | 内容 |
 |------|------|
@@ -499,7 +499,7 @@ PyTorch基礎 → VAE → 拡散モデル理論 → 拡散モデル実装 → �
 ---
 
 #### Notebook 40: 拡散モデルの理論（ELBO導出編）
-**ファイル名**: `40_diffusion_models_theory_elbo_v1.ipynb`
+**ファイル名**: `notebooks/generative/40_diffusion_models_theory_elbo_v1.ipynb`
 
 | 項目 | 内容 |
 |------|------|
@@ -544,7 +544,7 @@ PyTorch基礎 → VAE → 拡散モデル理論 → 拡散モデル実装 → �
 ### Phase 6: 拡散モデルの実装（推定時間: 10-12時間）
 
 #### Notebook 41: U-Netと位置エンコーディング
-**ファイル名**: `41_unet_positional_encoding_v1.ipynb`
+**ファイル名**: `notebooks/generative/41_unet_positional_encoding_v1.ipynb`
 
 | 項目 | 内容 |
 |------|------|
@@ -586,7 +586,7 @@ PyTorch基礎 → VAE → 拡散モデル理論 → 拡散モデル実装 → �
 ---
 
 #### Notebook 42: 拡散モデルの実装（基礎編）
-**ファイル名**: `42_diffusion_model_implementation_v1.ipynb`
+**ファイル名**: `notebooks/generative/42_diffusion_model_implementation_v1.ipynb`
 
 | 項目 | 内容 |
 |------|------|
@@ -637,7 +637,7 @@ PyTorch基礎 → VAE → 拡散モデル理論 → 拡散モデル実装 → �
 ---
 
 #### Notebook 43: 拡散モデルの学習と評価
-**ファイル名**: `43_diffusion_model_training_v1.ipynb`
+**ファイル名**: `notebooks/generative/43_diffusion_model_training_v1.ipynb`
 
 | 項目 | 内容 |
 |------|------|
@@ -688,7 +688,7 @@ PyTorch基礎 → VAE → 拡散モデル理論 → 拡散モデル実装 → �
 ### Phase 7: 拡散モデルの応用（推定時間: 8-10時間）
 
 #### Notebook 44: 条件付き拡散モデル
-**ファイル名**: `44_conditional_diffusion_models_v1.ipynb`
+**ファイル名**: `notebooks/generative/44_conditional_diffusion_models_v1.ipynb`
 
 | 項目 | 内容 |
 |------|------|
@@ -732,7 +732,7 @@ PyTorch基礎 → VAE → 拡散モデル理論 → 拡散モデル実装 → �
 ---
 
 #### Notebook 45: ガイダンスとStable Diffusion
-**ファイル名**: `45_guidance_stable_diffusion_v1.ipynb`
+**ファイル名**: `notebooks/generative/45_guidance_stable_diffusion_v1.ipynb`
 
 | 項目 | 内容 |
 |------|------|
