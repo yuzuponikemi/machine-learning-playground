@@ -60,3 +60,4 @@ dmypy.json
 models/
 catboost_info/
 **/catboost_info/
+notebooks/generative/data/
