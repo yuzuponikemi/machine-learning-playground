@@ -1,0 +1,22 @@
+# 3D Computer Vision 基礎実装プロジェクト - 必要なライブラリ
+
+# 基本的な数値計算・配列操作
+numpy>=1.24.0
+scipy>=1.10.0
+
+# 画像処理・表示
+matplotlib>=3.7.0
+pillow>=9.5.0
+seaborn>=0.12.0
+
+# コンピュータビジョン
+opencv-python>=4.8.0
+opencv-contrib-python>=4.8.0  # SIFT, SURFなどの追加機能
+
+# 3D処理・可視化
+open3d>=0.17.0
+plotly>=5.14.0
+
+# オプション（高度な機能）
+# pycolmap>=0.4.0  # COLMAP Python bindings（SfM用）
+# trimesh>=3.20.0  # メッシュ処理
