@@ -1039,4 +1039,381 @@ After completing this comprehensive plan:
 
 ---
 
+## Phase 10: Optimization Methods (H_optimization/) 🎯
+
+この単元では、機械学習で広く使われるブラックボックス最適化手法の理論と実装を学びます。
+Notebook 20（Optunaハイパーパラメータ最適化）の前提知識として推奨されます。
+
+> **📁 命名規則（新方式）**
+> - 単元ディレクトリ: `H_optimization/`（プレフィックスで単元間の順序を管理）
+> - ノートブック: 番号なし、内容を表す名前のみ
+> - 順序: このカリキュラムファイルで一元管理
+
+---
+
+### `blackbox_intro.ipynb`
+**Goal**: ブラックボックス最適化の全体像を理解する
+
+**Contents**:
+- **最適化問題の定式化**:
+  - 目的関数、制約条件、探索空間
+  - 連続最適化 vs 離散最適化
+  - 勾配ベース vs 勾配フリー手法
+
+- **ブラックボックス最適化の特徴**:
+  - 目的関数の内部構造が不明
+  - 勾配情報が利用できない
+  - 評価コストが高い場合の戦略
+
+- **局所解 vs 大域解**:
+  - 多峰性関数の可視化
+  - 局所解に陥る問題
+  - 大域最適化の困難さ
+
+- **手法の分類と比較**:
+  - 無情報探索（Grid/Random Search）
+  - モデルベース手法（ベイズ最適化）
+  - メタヒューリスティクス（進化計算、スウォーム知能）
+  - 各手法の長所・短所・適用場面
+
+**ベンチマーク関数**:
+- Rastrigin関数、Rosenbrock関数、Ackley関数
+- 2D可視化による関数特性の理解
+
+---
+
+### `simulated_annealing.ipynb`
+**Goal**: 焼きなまし法の原理と実装をマスターする
+
+**Contents**:
+- **物理的アナロジー**:
+  - 金属の焼きなまし過程
+  - エネルギー最小化と最適化の対応
+
+- **アルゴリズムの詳細**:
+  - メトロポリス基準（Metropolis criterion）
+  - 温度スケジュール（冷却率）
+  - 近傍解の生成方法
+
+- **探索と活用のバランス**:
+  - 高温：広範囲探索（exploration）
+  - 低温：局所改善（exploitation）
+  - 温度減衰による段階的収束
+
+- **実装と可視化**:
+  - Pythonによるスクラッチ実装
+  - 探索軌跡のアニメーション
+  - 温度スケジュールの影響比較
+
+- **パラメータチューニング**:
+  - 初期温度の設定
+  - 冷却率の選択
+  - 停止条件の設計
+
+**応用例**: 巡回セールスマン問題、スケジューリング問題
+
+---
+
+### `genetic_algorithm.ipynb`
+**Goal**: 遺伝的アルゴリズムの原理と実装をマスターする
+
+**Contents**:
+- **生物学的アナロジー**:
+  - 自然選択と適者生存
+  - 遺伝子、染色体、個体、集団
+
+- **基本オペレータ**:
+  - 選択（Selection）：ルーレット選択、トーナメント選択、エリート選択
+  - 交叉（Crossover）：一点交叉、二点交叉、一様交叉
+  - 突然変異（Mutation）：ビット反転、ガウシアン変異
+
+- **適応度関数**:
+  - 目的関数から適応度への変換
+  - スケーリング手法
+  - 制約処理（ペナルティ法、修復法）
+
+- **収束性と多様性**:
+  - 早熟収束の問題
+  - 多様性維持の技法
+  - 探索と活用のバランス
+
+- **実装と可視化**:
+  - Pythonによるスクラッチ実装
+  - 世代ごとの集団分布の可視化
+  - 適応度の進化過程
+
+**応用例**: 関数最適化、特徴選択、ニューラルネットワークの構造探索
+
+---
+
+### `particle_swarm.ipynb`
+**Goal**: 粒子群最適化の原理と実装をマスターする
+
+**Contents**:
+- **群知能のアナロジー**:
+  - 鳥の群れ、魚の群れの行動
+  - 個体の局所情報と群の大域情報
+
+- **アルゴリズムの詳細**:
+  - 粒子の位置と速度
+  - 個体最良（pbest）と群最良（gbest）
+  - 速度更新式と位置更新式
+
+- **パラメータの役割**:
+  - 慣性重み（inertia weight）
+  - 認知係数（cognitive coefficient）
+  - 社会係数（social coefficient）
+  - 速度制限（velocity clamping）
+
+- **バリエーション**:
+  - グローバルベスト vs ローカルベスト
+  - 適応的パラメータ調整
+  - QPSO（量子粒子群最適化）
+
+- **実装と可視化**:
+  - Pythonによるスクラッチ実装
+  - 粒子の動きのアニメーション
+  - 収束過程の可視化
+
+**応用例**: 連続最適化、ニューラルネットワークの重み最適化
+
+---
+
+### `bayesian_optimization_gp.ipynb` ⭐⭐⭐
+**Goal**: ガウス過程ベースのベイズ最適化を理解する
+
+**Contents**:
+- **ベイズ最適化の原理**:
+  - サロゲートモデル（代理モデル）
+  - 不確実性の定量化
+  - 探索と活用のトレードオフ
+
+- **ガウス過程（Gaussian Process）**:
+  - ガウス過程回帰の基礎
+  - カーネル関数（RBF、Matérn）
+  - 平均関数と共分散関数
+  - ハイパーパラメータの最適化
+
+- **獲得関数（Acquisition Function）**:
+  - Expected Improvement (EI)
+  - Probability of Improvement (PI)
+  - Upper Confidence Bound (UCB)
+  - 獲得関数の可視化と比較
+
+- **実装と可視化**:
+  - scikit-optimizeによる実装
+  - GPyOptによる実装
+  - 獲得関数の変化のアニメーション
+  - サロゲートモデルの更新過程
+
+- **GPベースの限界**:
+  - 計算量 O(n³) の問題
+  - 高次元での性能劣化
+  - → TPEへの動機付け
+
+**前提知識**: 基礎的な確率・統計の知識
+
+---
+
+### `tpe_algorithm.ipynb` ⭐⭐⭐
+**Goal**: TPE（Tree-structured Parzen Estimator）とDefine-by-Runを深く理解する
+
+**Contents**:
+- **TPEの動機**:
+  - ガウス過程の限界を克服
+  - Optunaのデフォルトアルゴリズム
+
+- **Parzen推定（カーネル密度推定）**:
+  - カーネル密度推定の基礎
+  - バンド幅の選択
+  - 可視化による直感的理解
+
+- **TPEのアルゴリズム**:
+  - 観測値を良い群 l(x) と悪い群 g(x) に分割
+  - 分割閾値 γ（上位何%を「良い」とするか）
+  - 各群の密度推定
+  - 獲得関数: l(x)/g(x) の最大化
+
+  ```
+  良いスコアの領域を密に、悪いスコアの領域を疎にサンプリング
+
+  l(x): 上位γ%の観測値から推定した密度
+  g(x): 下位(1-γ)%の観測値から推定した密度
+
+  次の探索点 = argmax l(x)/g(x)
+  ```
+
+- **GPとの比較**:
+  | 観点 | Gaussian Process | TPE |
+  |------|------------------|-----|
+  | 計算量 | O(n³) | O(n log n) |
+  | 高次元 | 苦手 | 比較的強い |
+  | カテゴリ変数 | 扱いにくい | 自然に扱える |
+  | 不確実性 | 明示的にモデル化 | 暗黙的 |
+
+- **Tree-structuredの意味**:
+  - 条件付きパラメータの扱い
+  - パラメータ間の依存関係
+  - 階層的な探索空間の表現
+
+- **Define-by-Run（動的探索空間定義）**:
+  - Define-and-Run vs Define-by-Run
+    ```python
+    # Define-and-Run（静的）: 事前に全パラメータを定義
+    param_grid = {
+        'model': ['RF', 'SVM'],
+        'RF__n_estimators': [100, 200],  # SVMでも定義が必要
+        'SVM__C': [0.1, 1.0],             # RFでも定義が必要
+    }
+
+    # Define-by-Run（動的）: 実行時に必要なパラメータだけ定義
+    def objective(trial):
+        model = trial.suggest_categorical('model', ['RF', 'SVM'])
+        if model == 'RF':
+            n_estimators = trial.suggest_int('n_estimators', 100, 500)
+        else:  # SVM
+            C = trial.suggest_float('C', 0.1, 10.0)
+    ```
+  - 条件分岐による柔軟な探索空間
+  - TPEのTree構造との相性の良さ
+  - 実行時の探索空間の動的構築
+
+- **実装と可視化**:
+  - Pythonによるスクラッチ実装
+  - l(x)とg(x)の密度分布の可視化
+  - 探索点の選択過程のアニメーション
+  - 条件付き探索空間のDAG可視化
+
+---
+
+### `pruning_early_stopping.ipynb` ⭐⭐
+**Goal**: 早期終了（Pruning）の理論と実装を理解する
+
+**Contents**:
+- **Pruningの動機**:
+  - 計算リソースの効率的な配分
+  - 見込みのない試行の早期打ち切り
+  - バンディット問題との関連
+
+- **Successive Halving**:
+  - アルゴリズムの詳細
+    ```
+    ラウンド0: 全81試行を1エポック学習 → 上位1/3を残す（27試行）
+    ラウンド1: 27試行を3エポック学習 → 上位1/3を残す（9試行）
+    ラウンド2: 9試行を9エポック学習 → 上位1/3を残す（3試行）
+    ラウンド3: 3試行を27エポック学習 → 最良の1試行を選択
+    ```
+  - 理論的背景（予算配分問題）
+  - 計算量の削減効果
+
+- **Hyperband**:
+  - Successive Halvingの拡張
+  - 複数のブラケット（早期打ち切りの強度）
+  - 探索と活用のバランス
+  - 理論的保証
+
+- **Median Pruner**:
+  - シンプルで実用的なPruner
+  - 中央値との比較による打ち切り
+  - n_startup_trials、n_warmup_stepsの意味
+
+- **その他のPruner**:
+  - Percentile Pruner
+  - Threshold Pruner
+  - Patient Pruner（改良版）
+
+- **Pruningの実装パターン**:
+  ```python
+  def objective(trial):
+      model = create_model(trial)
+      for epoch in range(100):
+          train_one_epoch(model)
+          val_score = evaluate(model)
+
+          # 中間結果を報告
+          trial.report(val_score, epoch)
+
+          # Pruning判定
+          if trial.should_prune():
+              raise optuna.TrialPruned()
+
+      return val_score
+  ```
+
+- **Pruningの注意点**:
+  - 学習曲線の性質（早期の性能が最終性能を予測できるか）
+  - warmupの重要性
+  - Pruneしすぎのリスク
+
+- **可視化**:
+  - Pruneされた試行の学習曲線
+  - リソース配分の効率性の比較
+  - Successive Halvingのアニメーション
+
+**次のステップ**: Notebook 20（Optunaハイパーパラメータ最適化）
+
+---
+
+### `optimization_comparison.ipynb`
+**Goal**: 各最適化手法を比較し、問題に応じた手法選択ができるようになる
+
+**Contents**:
+- **ベンチマーク実験**:
+  - 複数のテスト関数での性能比較
+  - 収束速度の比較
+  - 解の品質の比較
+
+- **問題特性と手法選択**:
+  | 問題特性 | 推奨手法 |
+  |----------|----------|
+  | 低次元・評価コスト高 | ベイズ最適化（GP） |
+  | 中次元・評価コスト高 | TPE |
+  | 高次元・評価コスト低 | 粒子群最適化、遺伝的アルゴリズム |
+  | 離散最適化 | 遺伝的アルゴリズム、焼きなまし法 |
+  | ノイズの多い目的関数 | ベイズ最適化（ノイズ考慮） |
+  | 並列評価可能 | 粒子群最適化、遺伝的アルゴリズム |
+  | カテゴリ変数が多い | TPE |
+
+- **ハイブリッド手法**:
+  - メタヒューリスティクス + 局所探索
+  - 複数手法の組み合わせ
+
+- **実践的なガイドライン**:
+  - 計算予算に応じた手法選択
+  - ハイパーパラメータ最適化への応用
+  - AutoML との関係
+
+**まとめ**:
+- 各手法の長所・短所の整理
+- 実務での選択指針
+- 今後の学習リソース
+
+---
+
+### Recommended Learning Path (Optimization Methods)
+
+```
+H_optimization/
+├── blackbox_intro.ipynb            ← 1. 最適化の全体像
+├── simulated_annealing.ipynb       ← 2. メタヒューリスティクス①
+├── genetic_algorithm.ipynb         ← 3. メタヒューリスティクス②
+├── particle_swarm.ipynb            ← 4. メタヒューリスティクス③
+├── bayesian_optimization_gp.ipynb  ← 5. ベイズ最適化（GP）
+├── tpe_algorithm.ipynb             ← 6. TPE + Define-by-Run ⭐
+├── pruning_early_stopping.ipynb    ← 7. Pruning（早期終了）⭐
+└── optimization_comparison.ipynb   ← 8. 手法比較と選択指針
+```
+
+**学習の流れ**:
+1. **1-4**: 古典的なメタヒューリスティクス手法で最適化の基礎を固める
+2. **5-6**: モデルベース最適化（GP → TPE）で現代的手法を学ぶ
+3. **7**: 計算効率を上げるPruningの仕組みを理解
+4. **8**: 全手法を比較し、問題に応じた選択ができるようになる
+
+**所要時間**: 約3週間
+
+**次のステップ**: Notebook 20（Optunaハイパーパラメータ最適化）で実践的なハイパーパラメータチューニングへ
+
+---
+
 *You now have a complete roadmap from ML basics to Kaggle Grandmaster-level skills. Let's build amazing models! 🚀*
