@@ -55,6 +55,12 @@ dependencies = [
     "tqdm>=4.66.0",
     "einops>=0.7.0",
 
+    # Reinforcement Learning
+    "gymnasium>=0.29.0",
+
+    # Video / GIF output
+    "imageio>=2.31.0",
+
     # Jupyter Notebook
     "nbconvert>=7.10.0",
     "nbclient>=0.9.0",

@@ -17,7 +17,7 @@ PyTorchを使った拡散モデル・画像生成AIの理論と実装
 
 ### 特徴
 
-- ✅ **45個の包括的なノートブック**: 基礎から最新の生成モデルまで網羅
+- ✅ **97+個の包括的なノートブック**: 基礎から世界モデルまで網羅
 - ✅ **詳細な日本語説明**: 10,000文字以上の解説
 - ✅ **豊富なコード コメント**: 200行以上の詳細な説明
 - ✅ **実世界の応用例**: Kaggleコンペティション実践
@@ -47,10 +47,36 @@ machine-learning-playground/
 │   │   ├── 24_time_series_feature_engineering_improved_v2.ipynb
 │   │   └── ...
 │   │
-│   └── generative/                   # 30-45: 生成モデル 🆕
-│       ├── 30_probability_and_normal_distribution_v1.ipynb
-│       ├── 31_maximum_likelihood_estimation_v1.ipynb
-│       └── ... (拡散モデル、VAE、Stable Diffusion)
+│   ├── generative/                   # 30-45: 生成モデル
+│   │   ├── 30_probability_and_normal_distribution_v1.ipynb
+│   │   ├── 31_maximum_likelihood_estimation_v1.ipynb
+│   │   └── ... (拡散モデル、VAE、Stable Diffusion)
+│   │
+│   ├── 3d-vision/                    # 50-63: 3Dビジョン
+│   │   ├── 50_optics_fundamentals_v1.ipynb
+│   │   └── ... (カメラモデル、SfM、NeRF)
+│   │
+│   ├── neural-engine/                # 70-76: ニューラルエンジン
+│   │   ├── 70_derivative_intuition_v1.ipynb
+│   │   └── ... (逆伝播、計算グラフ)
+│   │
+│   ├── spatial-cnn/                  # 80-102: 空間CNN
+│   │   ├── 80_what_is_convolution_v1.ipynb
+│   │   └── ... (CNN、ViT、セグメンテーション)
+│   │
+│   ├── H_optimization/              # 110-116: 最適化
+│   │   ├── 110_gradient_descent_fundamentals_v1.ipynb
+│   │   └── ... (Adam、学習率スケジューリング)
+│   │
+│   ├── spatiotemporal/              # 130-136: 時空間モデリング 🆕
+│   │   ├── 130_temporal_attention_fundamentals_v1.ipynb
+│   │   ├── 131_video_diffusion_models_v1.ipynb
+│   │   └── ... (DiT、物理動画生成)
+│   │
+│   └── world-models/                # 140-146: 世界モデル 🆕
+│       ├── 140_representation_learning_for_prediction_v1.ipynb
+│       ├── 141_jepa_joint_embedding_predictive_v1.ipynb
+│       └── ... (DreamerV3、Genie、GridWorld)
 │
 ├── scripts/                           # 🔧 ユーティリティスクリプト
 │   ├── notebook_improvements/        # ノートブック改善用スクリプト
@@ -231,6 +257,50 @@ jupyter notebook notebooks/
 **全コース合計**: 198-262時間（約5-9ヶ月の学習期間）
 
 詳細は [DIFFUSION_MODELS_CURRICULUM.md](./DIFFUSION_MODELS_CURRICULUM.md) を参照
+
+---
+
+## 🎬 時空間モデリングコース（Notebooks 130-136） 🆕
+
+### 前提知識
+- 生成モデルコース（Notebooks 30-45）の完了推奨
+- 3Dビジョンコース（Notebooks 50-63）の基礎知識
+- ViT/Self-Attentionの理解（Notebook 95）
+
+### Phase 6: 時空間・動画生成（推定時間: 15-20時間）
+
+| # | ノートブック | 内容 | 時間 | 難易度 |
+|---|------------|------|------|--------|
+| 130 | 時間的注意機構の基礎 | Temporal Attention, Causal Mask | 120-150分 | ★★★☆☆ |
+| 131 | Video Diffusion Models | U-Net temporal拡張, Moving-MNIST | 150-180分 | ★★★★☆ |
+| 132 | Diffusion Transformer (DiT) | パッチ埋め込み, adaLN-Zero | 150-180分 | ★★★★☆ |
+| 133 | カメラと物体の運動分離 | Plücker座標, オプティカルフロー | 120-150分 | ★★★★☆ |
+| 134 | 時間的一貫性の技術 | Temporal Super-Resolution, FVD | 120-150分 | ★★★★☆ |
+| 135 | 物理動画生成 (Capstone) | 物理シミュレーション+DiT | 240-300分 | ★★★★★ |
+| 136 | 時空間モデリング総括 | 技術体系整理, Sora解説 | 90-120分 | ★★★★☆ |
+
+---
+
+## 🌍 世界モデルコース（Notebooks 140-146） 🆕
+
+### 前提知識
+- 時空間モデリングコース（Notebooks 130-136）の完了推奨
+- PyTorch基礎（Notebook 35-36）
+- 最適化手法（Notebooks 110-116）
+
+### Phase 7: 世界モデル・行動（推定時間: 18-24時間）
+
+| # | ノートブック | 内容 | 時間 | 難易度 |
+|---|------------|------|------|--------|
+| 140 | 予測のための表現学習 | 対照学習, InfoNCE, t-SNE | 120-150分 | ★★★☆☆ |
+| 141 | JEPA | Joint Embedding Predictive, EMA | 150-180分 | ★★★★☆ |
+| 142 | モデルベースRL基礎 | Dyna-Q, GridWorld | 150-180分 | ★★★★☆ |
+| 143 | DreamerV3 | RSSM, 想像内学習 | 180-240分 | ★★★★★ |
+| 144 | Genie | 潜在行動発見, VQ-VAE | 150-180分 | ★★★★★ |
+| 145 | GridWorldエージェント (Capstone) | 世界モデル+MPC計画 | 300-360分 | ★★★★★ |
+| 146 | 世界モデル総括 | 全Phase統合, AGI展望 | 90-120分 | ★★★★☆ |
+
+**全コース合計**: 約280-350時間（約7-12ヶ月の学習期間）
 
 ## 🎯 学習目標
 
