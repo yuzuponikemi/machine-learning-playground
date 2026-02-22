@@ -1,7 +1,7 @@
 # 総合シラバス — Machine Learning Playground
 
 > **最終更新**: 2026-02-22
-> **総ノートブック数**: 126
+> **総ノートブック数**: 133
 > **推定総学習時間**: 350-450時間
 
 ---
@@ -17,10 +17,11 @@
 7. [Unit 6: ニューラルエンジン (70-76)](#unit-6-ニューラルエンジン-neural-engine)
 8. [Unit 7: 空間CNN (80-102)](#unit-7-空間cnn-spatial-cnn)
 9. [Unit 8: 最適化手法 (110-116)](#unit-8-最適化手法-optimization)
-10. [Unit 9: 時空間モデリング (130-136)](#unit-9-時空間モデリング-spatiotemporal)
-11. [Unit 10: 世界モデル (140-146)](#unit-10-世界モデル-world-models)
-12. [Unit 11: 埋め込み (150-157)](#unit-11-埋め込み-embeddings)
-13. [Unit 12: 言語モデリング (160-167)](#unit-12-言語モデリング-language-models)
+10. [Unit 9: シーケンスモデリング (120-126)](#unit-9-シーケンスモデリング-sequence-models)
+11. [Unit 10: 時空間モデリング (130-136)](#unit-10-時空間モデリング-spatiotemporal)
+12. [Unit 11: 世界モデル (140-146)](#unit-11-世界モデル-world-models)
+13. [Unit 12: 埋め込み (150-157)](#unit-12-埋め込み-embeddings)
+14. [Unit 13: 言語モデリング (160-167)](#unit-13-言語モデリング-language-models)
 14. [キーワード索引](#キーワード索引)
 15. [依存関係マップ](#依存関係マップ)
 
@@ -36,8 +37,11 @@ ML基礎 (00-12)  ──→  GBDT (13-22)  ──→  専門トピック (23-28)
      ├──→  3Dビジョン (50-63)
      │
      ├──→  ニューラルエンジン (70-76)  ──→  空間CNN (80-102)
-     │                                        │
-     │                                        └──→  最適化 (110-116)
+     │                    │                    │
+     │                    │                    └──→  最適化 (110-116)
+     │                    │
+     │                    └──→  シーケンス (120-126)  ──→  時空間 (130-136)
+     │                                                ──→  言語モデリング (160-167)
      │
      └──→  埋め込み (150-157)  ──→  言語モデリング (160-167)
 ```
@@ -229,7 +233,25 @@ ML基礎 (00-12)  ──→  GBDT (13-22)  ──→  専門トピック (23-28)
 
 ---
 
-## Unit 9: 時空間モデリング (spatiotemporal/)
+## Unit 9: シーケンスモデリング (sequence-models/)
+
+**対象**: ニューラルエンジン基礎を習得した学習者
+**推定時間**: 15-20時間
+**使用ライブラリ**: NumPy (120-124), PyTorch (125-126)
+
+| # | タイトル | 難易度 | 時間 | 主なトピック |
+|---|---------|--------|------|------------|
+| 120 | シーケンスとは何か ― 時間の次元へ | ★★☆☆☆ | 60-90分 | 静的 vs 系列データ, スライディングウィンドウMLPの限界, 状態の概念 |
+| 121 | バニラRNN ― 状態を持つネットワーク | ★★★☆☆ | 120-150分 | 状態方程式, 重み共有, 展開計算グラフ, forward実装, gradient check |
+| 122 | BPTT ― 時間を遡る逆伝播 | ★★★★☆ | 150-180分 | BPTT完全実装, 固有値と勾配消失, Truncated BPTT, 勾配クリッピング, Adding Problem |
+| 123 | LSTM ― 記憶を制御する | ★★★★☆ | 150-180分 | 4ゲート, セル状態の勾配高速道路, forward/backward実装, RNN vs LSTM実証 |
+| 124 | GRUと時系列予測 | ★★★☆☆ | 120-150分 | GRU設計, RNN/LSTM/GRU三者比較, 時系列前処理, 多ステップ予測 |
+| 125 | Seq2Seq ― シーケンス変換 | ★★★★☆ | 150-180分 | Encoder-Decoder, コンテキストベクトル, Teacher Forcing, ボトルネック実証 |
+| 126 | Attention ― Transformerへの架け橋 | ★★★★☆ | 150-180分 | Bahdanau Attention, Attentionマトリクス可視化, Scaled Dot-Product, Self-Attentionへの布石 |
+
+---
+
+## Unit 10: 時空間モデリング (spatiotemporal/)
 
 **対象**: 生成モデルコースと3Dビジョン基礎を習得した学習者
 **推定時間**: 15-20時間
@@ -247,7 +269,7 @@ ML基礎 (00-12)  ──→  GBDT (13-22)  ──→  専門トピック (23-28)
 
 ---
 
-## Unit 10: 世界モデル (world-models/)
+## Unit 11: 世界モデル (world-models/)
 
 **対象**: 時空間モデリングと表現学習の基礎を習得した学習者
 **推定時間**: 18-24時間
@@ -265,7 +287,7 @@ ML基礎 (00-12)  ──→  GBDT (13-22)  ──→  専門トピック (23-28)
 
 ---
 
-## Unit 11: 埋め込み (embeddings/)
+## Unit 12: 埋め込み (embeddings/)
 
 **対象**: ニューラルエンジン基礎とPyTorchを習得した学習者
 **推定時間**: 15-20時間
@@ -284,7 +306,7 @@ ML基礎 (00-12)  ──→  GBDT (13-22)  ──→  専門トピック (23-28)
 
 ---
 
-## Unit 12: 言語モデリング (language-models/)
+## Unit 13: 言語モデリング (language-models/)
 
 **対象**: 埋め込みシリーズとTransformer基礎を習得した学習者
 **推定時間**: 15-20時間
@@ -311,9 +333,11 @@ ML基礎 (00-12)  ──→  GBDT (13-22)  ──→  専門トピック (23-28)
 | キーワード | 関連ノートブック |
 |-----------|--------------|
 | Adam / AdaGrad / RMSprop | 35, 112, 116 |
-| Attention / Self-Attention | 92, 95, 130, 132, 152 |
+| Adding Problem | 122, 123 |
+| Attention / Self-Attention | 92, 95, 126, 130, 132, 152 |
 | AutoML / ハイパーパラメータ最適化 | 10, 20, 116 |
-| Backpropagation (逆伝播) | 73, 74, 75 |
+| Backpropagation (逆伝播) | 73, 74, 75, 122 |
+| BPTT (Backpropagation Through Time) | 122 |
 | Batch Normalization | 76 |
 | BERT | 152, 153 |
 | Bias (バイアス分析) | 157 |
@@ -337,6 +361,7 @@ ML基礎 (00-12)  ──→  GBDT (13-22)  ──→  専門トピック (23-28)
 | ELBO | 34, 37, 40 |
 | EM Algorithm | 34 |
 | Embedding (埋め込み) | 150-157 |
+| Encoder-Decoder / Seq2Seq | 125, 126 |
 | Epipolar Geometry | 55 |
 
 ### F-N
@@ -351,7 +376,9 @@ ML基礎 (00-12)  ──→  GBDT (13-22)  ──→  専門トピック (23-28)
 | GloVe | 150, 151, 157 |
 | GMM (混合ガウスモデル) | 33, 34 |
 | Gradient Descent (勾配降下法) | 35, 70, 110 |
-| Gradient Pathology (勾配病理) | 76 |
+| Gradient Clipping (勾配クリッピング) | 76, 122 |
+| Gradient Pathology (勾配病理) | 76, 122 |
+| GRU (Gated Recurrent Unit) | 124 |
 | GridSearchCV | 08, 10 |
 | HNSW | 155 |
 | InfoNCE | 140 |
@@ -364,6 +391,7 @@ ML基礎 (00-12)  ──→  GBDT (13-22)  ──→  専門トピック (23-28)
 | Learning Rate Scheduling | 113 |
 | LightGBM | 13, 14, 16, 17, 20 |
 | Linear Models (線形モデル) | 04 |
+| LSTM (Long Short-Term Memory) | 123 |
 | MLE (最尤推定) | 31 |
 | MLP (多層パーセプトロン) | 07, 08, 09 |
 | Momentum / Nesterov | 111 |
@@ -385,6 +413,7 @@ ML基礎 (00-12)  ──→  GBDT (13-22)  ──→  専門トピック (23-28)
 | Receptive Field (受容野) | 86, 87, 89 |
 | Regularization (正則化) | 04, 114 |
 | ResNet / Skip Connection | 99 |
+| RNN (Recurrent Neural Network) | 121, 122, 123, 124 |
 | RSSM | 143 |
 | Semantic Segmentation | 96, 97 |
 | Sentence-BERT / Sentence-Transformers | 153, 157 |
@@ -393,14 +422,16 @@ ML基礎 (00-12)  ──→  GBDT (13-22)  ──→  専門トピック (23-28)
 | Skip-gram / CBOW | 151 |
 | SMOTE | 23 |
 | Stable Diffusion | 45 |
+| Sequence Modeling (シーケンスモデリング) | 120-126 |
 | Stacking | 12, 22 |
 | Stereo Vision | 56 |
 | Structure from Motion (SfM) | 59 |
 | SVM | 06 |
 | t-SNE | 140, 154 |
 | TabNet | 26 |
-| Time Series (時系列) | 19, 24, 130 |
-| Transformer | 95, 132 |
+| Teacher Forcing | 125 |
+| Time Series (時系列) | 19, 24, 124, 130 |
+| Transformer | 95, 126, 132 |
 | Triangulation | 57 |
 | Triplet Loss | 156 |
 | U-Net | 41, 97, 131 |
@@ -437,7 +468,10 @@ ML基礎 (00-12)  ──→  GBDT (13-22)  ──→  専門トピック (23-28)
                         │                           │
                         │                      [110-116 最適化]
                         │
-                   [150-157 埋め込み]
+                        ├── [120-126 シーケンス] → [130-136 時空間]
+                        │                       → [160-167 言語モデリング]
+                        │
+                   [150-157 埋め込み] → [160-167 言語モデリング]
 
 [50-63 3Dビジョン] ← [線形代数の基礎]
 ```
