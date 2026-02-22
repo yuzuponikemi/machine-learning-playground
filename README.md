@@ -17,7 +17,7 @@ PyTorchを使った拡散モデル・画像生成AIの理論と実装
 
 ### 特徴
 
-- ✅ **97+個の包括的なノートブック**: 基礎から世界モデルまで網羅
+- ✅ **111+個の包括的なノートブック**: 基礎から埋め込みまで網羅
 - ✅ **詳細な日本語説明**: 10,000文字以上の解説
 - ✅ **豊富なコード コメント**: 200行以上の詳細な説明
 - ✅ **実世界の応用例**: Kaggleコンペティション実践
@@ -73,10 +73,16 @@ machine-learning-playground/
 │   │   ├── 131_video_diffusion_models_v1.ipynb
 │   │   └── ... (DiT、物理動画生成)
 │   │
-│   └── world-models/                # 140-146: 世界モデル 🆕
-│       ├── 140_representation_learning_for_prediction_v1.ipynb
-│       ├── 141_jepa_joint_embedding_predictive_v1.ipynb
-│       └── ... (DreamerV3、Genie、GridWorld)
+│   ├── world-models/                # 140-146: 世界モデル
+│   │   ├── 140_representation_learning_for_prediction_v1.ipynb
+│   │   ├── 141_jepa_joint_embedding_predictive_v1.ipynb
+│   │   └── ... (DreamerV3、Genie、GridWorld)
+│   │
+│   └── embeddings/                  # 150-157: 埋め込み 🆕
+│       ├── 150_embedding_geometry_v1.ipynb
+│       ├── 151_word2vec_static_embeddings_v1.ipynb
+│       ├── 152_contextual_embeddings_v1.ipynb
+│       └── ... (文埋め込み、可視化、ベクトル検索、距離学習)
 │
 ├── scripts/                           # 🔧 ユーティリティスクリプト
 │   ├── notebook_improvements/        # ノートブック改善用スクリプト
@@ -300,7 +306,29 @@ jupyter notebook notebooks/
 | 145 | GridWorldエージェント (Capstone) | 世界モデル+MPC計画 | 300-360分 | ★★★★★ |
 | 146 | 世界モデル総括 | 全Phase統合, AGI展望 | 90-120分 | ★★★★☆ |
 
-**全コース合計**: 約280-350時間（約7-12ヶ月の学習期間）
+**全コース合計**: 約350-440時間（約8-14ヶ月の学習期間）
+
+---
+
+## 🔤 埋め込みコース（Notebooks 150-157） 🆕
+
+### 前提知識
+- ニューラルエンジンコース（Notebooks 70-76）の完了推奨
+- PyTorch基礎（Notebook 35-36）
+- 対照学習の基礎（Notebook 140）があると望ましい
+
+### Phase 8: 埋め込み（推定時間: 15-20時間）
+
+| # | ノートブック | 内容 | 時間 | 難易度 |
+|---|------------|------|------|--------|
+| 150 | 埋め込みの幾何学 | コサイン類似度, ユークリッド距離, 高次元の呪い | 90-120分 | ★★☆☆☆ |
+| 151 | Word2Vec と静的埋め込み | Skip-gram/CBOW実装, 負例サンプリング, FastText/GloVe比較 | 120-150分 | ★★★☆☆ |
+| 152 | 文脈付き埋め込み | BERT層別埋め込み抽出, 多義語可視化, Attention分析 | 120-150分 | ★★★★☆ |
+| 153 | 文・文書の埋め込み | sentence-transformers, プーリング戦略比較 | 90-120分 | ★★★☆☆ |
+| 154 | 多様体学習と可視化 | PCA → t-SNE → UMAP, パラメータ影響の体感 | 120-150分 | ★★★☆☆ |
+| 155 | ベクトル検索とインデックス | FAISS, IVF, HNSW, 速度vs精度 | 90-120分 | ★★★☆☆ |
+| 156 | 距離学習とファインチューニング | Triplet Loss, Contrastive Loss, ドメイン特化 | 120-150分 | ★★★★☆ |
+| 157 | 埋め込みの応用と統合 | RAG, クラスタリング, バイアス分析, 多言語 | 90-120分 | ★★★☆☆ |
 
 ## 🎯 学習目標
 

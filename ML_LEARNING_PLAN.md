@@ -1416,4 +1416,137 @@ H_optimization/
 
 ---
 
+---
+
+## Phase 11: Embeddings (notebooks/embeddings/) 🔤
+
+言語ベクトル（埋め込み）の理論と実装を体系的に学びます。
+Word2Vecから文脈付き埋め込み、ベクトル検索まで、NLPの基盤技術を網羅します。
+
+> **前提知識**: Neural Engine (70-76)、PyTorch基礎 (35-36)、対照学習 (140) があると望ましい
+
+---
+
+### `150_embedding_geometry_v1.ipynb`
+**Goal**: ベクトル空間の距離・類似度・角度が「意味」にどう対応するかを理解する
+
+**Contents**:
+- **距離と類似度の数理**:
+  - コサイン類似度、ユークリッド距離、ドット積
+  - NumPyによるスクラッチ実装
+  - 各指標の使い分けガイドライン
+
+- **事前学習済み埋め込みの探索**:
+  - GloVe (glove-wiki-gigaword-50) による意味空間探索
+  - 単語の演算（king - man + woman = queen）
+  - 幾何学的な図解（PCA parallelogram）
+
+- **高次元の呪い**:
+  - 次元増加に伴う類似度分布の変化
+  - 距離比の収束実験
+  - 類似度検索への影響
+
+**Key Skills**: numpy, gensim, matplotlib, PCA
+
+---
+
+### `151_word2vec_static_embeddings_v1.ipynb`
+**Goal**: Skip-gramモデルをスクラッチ実装し、静的埋め込みの仕組みを理解する
+
+**Contents**:
+- **Skip-gramの数理と実装**:
+  - 分布仮説（distributional hypothesis）
+  - Softmax → 負例サンプリングへの動機
+  - NumPyのみでの完全実装（前向き・後ろ向き・SGD）
+
+- **学習結果の可視化**:
+  - PCA による2D可視化
+  - 意味クラスタの形成過程
+
+- **静的埋め込み手法の比較**:
+  - CBOW vs Skip-gram
+  - GloVe（共起行列の因数分解）
+  - FastText（サブワード）
+  - 各手法の長所・短所
+
+- **静的埋め込みの限界**:
+  - 多義語問題（polysemy）
+  - → 文脈付き埋め込みへの動機
+
+**Key Skills**: numpy, gensim, PCA, 手動勾配計算
+
+---
+
+### `152_contextual_embeddings_v1.ipynb`
+**Goal**: BERTの各層から埋め込みを抽出し、文脈依存の表現を分析する
+
+**Contents**:
+- **BERT埋め込みの抽出**:
+  - HuggingFace transformersによるBERT操作
+  - 全13層（入力+12層）からの埋め込み取得
+  - WordPieceトークナイゼーションの扱い
+
+- **多義語の文脈依存変化**:
+  - "bank"（銀行 vs 土手）の層ごとの分化
+  - コサイン類似度の層別変化プロット
+  - PCA/t-SNEによる可視化
+
+- **層ごとの情報の種類**:
+  - 浅い層 ≈ 構文、深い層 ≈ 意味
+  - ヒートマップによる定量分析
+
+- **Attention重みの可視化**:
+  - Attention行列のヒートマップ
+  - 単語間の関係性の可視化
+
+- **静的 vs 動的の定量比較**:
+  - 単語の意味曖昧性解消タスク
+  - プーリング戦略の比較（CLS, Mean, Max）
+
+**Key Skills**: transformers, torch, sklearn, seaborn
+
+---
+
+### Phase 2 ノートブック（後続作成予定）
+
+| Notebook | タイトル | 概要 |
+|----------|---------|------|
+| 153 | 文・文書の埋め込み | sentence-transformers、プーリング戦略、意味的類似度 |
+| 154 | 多様体学習と可視化 | PCA → t-SNE → UMAP、パラメータの影響 |
+| 155 | ベクトル検索とインデックス | FAISS、IVF、HNSW、速度vs精度 |
+| 156 | 距離学習とファインチューニング | Triplet/Contrastive Loss、ドメイン特化 |
+| 157 | 埋め込みの応用と統合 | RAG、クラスタリング、バイアス分析、Capstone |
+
+---
+
+### Recommended Learning Path (Embeddings)
+
+```
+embeddings/
+├── 150_embedding_geometry_v1.ipynb          ← 1. ベクトル空間の基礎
+├── 151_word2vec_static_embeddings_v1.ipynb  ← 2. 静的埋め込みの実装
+├── 152_contextual_embeddings_v1.ipynb       ← 3. 文脈付き埋め込み
+├── 153_sentence_document_embeddings_v1.ipynb ← 4. 文レベルの表現
+├── 154_manifold_learning_visualization_v1.ipynb ← 5. 可視化技術
+├── 155_vector_search_indexing_v1.ipynb       ← 6. 検索と索引
+├── 156_metric_learning_finetuning_v1.ipynb   ← 7. 距離学習
+└── 157_embedding_applications_synthesis_v1.ipynb ← 8. 応用と統合
+```
+
+**学習の流れ**:
+1. **150-151**: 埋め込みの数理的基盤（距離・類似度・Word2Vec実装）
+2. **152-153**: 現代的な埋め込み手法（BERT・sentence-transformers）
+3. **154-155**: 可視化と検索の実践技術
+4. **156-157**: ファインチューニングと応用
+
+**所要時間**: 約4-6週間
+
+**既存ノートブックとの接続**:
+- [70-76 Neural Engine] → [150 幾何学の基礎]
+- [35-36 PyTorch基礎] → [151 Word2Vec実装]
+- [44 CLIP] ↔ [152 文脈付き埋め込み]（相互参照）
+- [140 表現学習] ↔ [156 距離学習]（対照学習を深掘り）
+
+---
+
 *You now have a complete roadmap from ML basics to Kaggle Grandmaster-level skills. Let's build amazing models! 🚀*
