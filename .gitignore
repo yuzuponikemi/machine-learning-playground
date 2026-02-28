@@ -61,3 +61,21 @@ models/
 catboost_info/
 **/catboost_info/
 notebooks/generative/data/
+# Local execution logs & analysis scripts
+execution_status.json
+clean_errors.txt
+analyze_errors.py
+run_all.py
+fix_*.py
+patch_gensim.py
+fix_repo_fonts.py
+
+# Downloaded Datasets
+**/*/data/
+**/*/FashionMNIST/
+**/*/MNIST/
+
+# Generated Plots and submissions
+**/*.png
+**/*.gif
+**/*.csv
