@@ -68,7 +68,12 @@ machine-learning-playground/
 │   │   ├── 110_gradient_descent_fundamentals_v1.ipynb
 │   │   └── ... (Adam、学習率スケジューリング)
 │   │
-│   ├── spatiotemporal/              # 130-136: 時空間モデリング 🆕
+│   ├── sequence-models/             # 120-126: シーケンスモデリング 🆕
+│   │   ├── 120_sequence_modeling_intro_v1.ipynb
+│   │   ├── 121_vanilla_rnn_v1.ipynb
+│   │   └── ... (BPTT, LSTM, GRU, Seq2Seq, Attention)
+│   │
+│   ├── spatiotemporal/              # 130-136: 時空間モデリング
 │   │   ├── 130_temporal_attention_fundamentals_v1.ipynb
 │   │   ├── 131_video_diffusion_models_v1.ipynb
 │   │   └── ... (DiT、物理動画生成)
@@ -310,7 +315,27 @@ jupyter notebook notebooks/
 
 ---
 
-## 🔤 埋め込みコース（Notebooks 150-157） 🆕
+## 🔄 シーケンスモデリングコース（Notebooks 120-126） 🆕
+
+### 前提知識
+- ニューラルエンジンコース（Notebooks 70-76）の完了推奨
+- PyTorch基礎（Notebook 35-36、125-126で使用）
+
+### Phase: シーケンスモデリング（推定時間: 15-20時間）
+
+| # | ノートブック | 内容 | 時間 | 難易度 |
+|---|------------|------|------|--------|
+| 120 | シーケンスとは何か | 静的vs系列データ、MLPの限界、状態の概念 | 60-90分 | ★★☆☆☆ |
+| 121 | バニラRNN | 状態方程式、重み共有、forward実装 | 120-150分 | ★★★☆☆ |
+| 122 | BPTT | 時間方向の逆伝播、勾配消失/爆発、Adding Problem | 150-180分 | ★★★★☆ |
+| 123 | LSTM | 4ゲート、セル状態の勾配高速道路 | 150-180分 | ★★★★☆ |
+| 124 | GRUと時系列予測 | GRU設計、三者比較、多ステップ予測 | 120-150分 | ★★★☆☆ |
+| 125 | Seq2Seq | Encoder-Decoder、Teacher Forcing | 150-180分 | ★★★★☆ |
+| 126 | Attention | Bahdanau Attention、Transformerへの架け橋 | 150-180分 | ★★★★☆ |
+
+---
+
+## 🔤 埋め込みコース（Notebooks 150-157）
 
 ### 前提知識
 - ニューラルエンジンコース（Notebooks 70-76）の完了推奨

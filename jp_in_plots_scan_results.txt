@@ -1,0 +1,1779 @@
+JAPANESE TEXT IN PLOT ELEMENTS: 441 instances across 16 files
+(1 file clean: 145_grid_world_agent_v1.ipynb)
+
+==============================================================================================================
+ 100_applications_v1.ipynb  (9 instances)
+==============================================================================================================
+  Cell   3 | JP: 手法: {method}
+          | EN: Method: {method}
+          | Code: ax.text(0.5, 0.45, f'手法: {method}', ha='center', va='center', fontsize=11)
+
+  Cell   3 | JP: 医療画像解析における空間的CNNの応用
+          | EN: Spatial CNN Applications in Medical Image Analysis
+          | Code: plt.suptitle('医療画像解析における空間的CNNの応用', fontsize=16, fontweight='bold')
+
+  Cell   6 | JP: 入力画像
+          | EN: Input Image
+          | Code: ax.set_title('入力画像', fontsize=12)
+
+  Cell   6 | JP: セマンティックセグメンテーション
+          | EN: Semantic Segmentation
+          | Code: ax.set_title('セマンティックセグメンテーション', fontsize=12)
+
+  Cell   6 | JP: クラス凡例
+          | EN: Class Legend
+          | Code: ax.set_title('クラス凡例', fontsize=12)
+
+  Cell   6 | JP: 自動運転におけるセマンティックセグメンテーション
+          | EN: Semantic Segmentation in Autonomous Driving
+          | Code: plt.suptitle('自動運転におけるセマンティックセグメンテーション', fontsize=16, fontweight='bold')
+
+  Cell   9 | JP: 衛星画像解析における空間的CNNの応用
+          | EN: Spatial CNN Applications in Satellite Image Analysis
+          | Code: plt.suptitle('衛星画像解析における空間的CNNの応用', fontsize=16, fontweight='bold')
+
+  Cell  12 | JP: CNNの帰納バイアス\n（局所性・重み共有）\nが特徴抽出を効率化
+          | EN: (manual) CNNの帰納バイアス\n（局所性・重み共有）\nが特徴抽出を効率化
+          | Code: ax.text(0.28, 0.15, 'CNNの帰納バイアス\n（局所性・重み共有）\nが特徴抽出を効率化',
+
+  Cell  12 | JP: 3D再構成パイプラインとCNNの役割
+          | EN: Role of CNN in 3D Reconstruction Pipeline
+          | Code: ax.set_title('3D再構成パイプラインとCNNの役割', fontsize=16, fontweight='bold')
+
+==============================================================================================================
+ 101_synthesis_v1.ipynb  (6 instances)
+==============================================================================================================
+  Cell   3 | JP: Unit 0.4 カリキュラムマップ：空間の帰納バイアス
+          | EN: (manual) Unit 0.4 カリキュラムマップ：空間の帰納バイアス
+          | Code: ax.set_title('Unit 0.4 カリキュラムマップ：空間の帰納バイアス', fontsize=16, fontweight='bold')
+
+  Cell   6 | JP: 概念間のつながり
+          | EN: (manual) 概念間のつながり
+          | Code: ax.set_title('概念間のつながり', fontsize=16, fontweight='bold')
+
+  Cell  10 | JP: VGG型\n（シンプルな積み重ね）
+          | EN: (manual) VGG型\n（シンプルな積み重ね）
+          | Code: ax.set_title('VGG型\n（シンプルな積み重ね）', fontsize=12, fontweight='bold')
+
+  Cell  10 | JP: ResNet型\n（スキップ接続で深く）
+          | EN: (manual) ResNet型\n（スキップ接続で深く）
+          | Code: ax.set_title('ResNet型\n（スキップ接続で深く）', fontsize=12, fontweight='bold')
+
+  Cell  10 | JP: U-Net型\n（エンコーダ-デコーダ）
+          | EN: (manual) U-Net型\n（エンコーダ-デコーダ）
+          | Code: ax.set_title('U-Net型\n（エンコーダ-デコーダ）', fontsize=12, fontweight='bold')
+
+  Cell  10 | JP: 代表的なCNNアーキテクチャパターン
+          | EN: (manual) 代表的なCNNアーキテクチャパターン
+          | Code: plt.suptitle('代表的なCNNアーキテクチャパターン', fontsize=14, fontweight='bold')
+
+==============================================================================================================
+ 102_future_outlook_v1.ipynb  (34 instances)
+==============================================================================================================
+  Cell   3 | JP: CNN時代
+          | EN: (manual) CNN時代
+          | Code: Patch(facecolor='lightblue', edgecolor='gray', label='CNN時代'),
+
+  Cell   3 | JP: アーキテクチャ革新
+          | EN: (manual) アーキテクチャ革新
+          | Code: Patch(facecolor='lightgreen', edgecolor='gray', label='アーキテクチャ革新'),
+
+  Cell   3 | JP: Transformer時代
+          | EN: (manual) Transformer時代
+          | Code: Patch(facecolor='lightyellow', edgecolor='gray', label='Transformer時代'),
+
+  Cell   3 | JP: 3D理解
+          | EN: (manual) 3D理解
+          | Code: Patch(facecolor='lightcoral', edgecolor='gray', label='3D理解'),
+
+  Cell   3 | JP: 深層学習による視覚理解の進化
+          | EN: (manual) 深層学習による視覚理解の進化
+          | Code: ax.set_title('深層学習による視覚理解の進化', fontsize=16, fontweight='bold')
+
+  Cell   7 | JP: 2D理解
+          | EN: (manual) 2D理解
+          | Code: ax.text(0.5, 0.85, '2D理解', ha='center', fontsize=14, fontweight='bold')
+
+  Cell   7 | JP: 画像分類\nセグメンテーション\n物体検出
+          | EN: (manual) 画像分類\nセグメンテーション\n物体検出
+          | Code: ax.text(0.5, 0.6, '画像分類\nセグメンテーション\n物体検出', ha='center', fontsize=11)
+
+  Cell   7 | JP: 入力: 単一画像\n出力: ラベル/マスク
+          | EN: (manual) 入力: 単一画像\n出力: ラベル/マスク
+          | Code: ax.text(0.5, 0.25, '入力: 単一画像\n出力: ラベル/マスク', ha='center', fontsize=10)
+
+  Cell   7 | JP: 2.5D理解
+          | EN: (manual) 2.5D理解
+          | Code: ax.text(0.5, 0.85, '2.5D理解', ha='center', fontsize=14, fontweight='bold')
+
+  Cell   7 | JP: 単眼深度推定\nステレオマッチング\n表面法線推定
+          | EN: (manual) 単眼深度推定\nステレオマッチング\n表面法線推定
+          | Code: ax.text(0.5, 0.6, '単眼深度推定\nステレオマッチング\n表面法線推定', ha='center', fontsize=11)
+
+  Cell   7 | JP: 入力: 画像(群)\n出力: 深度マップ
+          | EN: (manual) 入力: 画像(群)\n出力: 深度マップ
+          | Code: ax.text(0.5, 0.25, '入力: 画像(群)\n出力: 深度マップ', ha='center', fontsize=10)
+
+  Cell   7 | JP: 3D理解
+          | EN: (manual) 3D理解
+          | Code: ax.text(0.5, 0.85, '3D理解', ha='center', fontsize=14, fontweight='bold')
+
+  Cell   7 | JP: NeRF\n3D Gaussian Splatting\nメッシュ再構成
+          | EN: (manual) NeRF\n3D Gaussian Splatting\nメッシュ再構成
+          | Code: ax.text(0.5, 0.6, 'NeRF\n3D Gaussian Splatting\nメッシュ再構成', ha='center', fontsize=11)
+
+  Cell   7 | JP: 入力: マルチビュー画像\n出力: 3Dシーン表現
+          | EN: (manual) 入力: マルチビュー画像\n出力: 3Dシーン表現
+          | Code: ax.text(0.5, 0.25, '入力: マルチビュー画像\n出力: 3Dシーン表現', ha='center', fontsize=10)
+
+  Cell   7 | JP: 2Dから3Dへの発展
+          | EN: (manual) 2Dから3Dへの発展
+          | Code: plt.suptitle('2Dから3Dへの発展', fontsize=16, fontweight='bold')
+
+  Cell  10 | JP: 入力
+          | EN: (manual) 入力
+          | Code: ax.text(0.1, 0.7, '入力', ha='center', fontsize=12, fontweight='bold')
+
+  Cell  10 | JP: (x, y, z, θ, φ)\n\n位置 + 視線方向
+          | EN: (manual) (x, y, z, θ, φ)\n\n位置 + 視線方向
+          | Code: ax.text(0.1, 0.5, '(x, y, z, θ, φ)\n\n位置 + 視線方向', ha='center', fontsize=10)
+
+  Cell  10 | JP: F: R⁵ → R⁴\n\nニューラルネット
+          | EN: (manual) F: R⁵ → R⁴\n\nニューラルネット
+          | Code: ax.text(0.4, 0.5, 'F: R⁵ → R⁴\n\nニューラルネット', ha='center', fontsize=10)
+
+  Cell  10 | JP: 出力
+          | EN: Output
+          | Code: ax.text(0.7, 0.7, '出力', ha='center', fontsize=12, fontweight='bold')
+
+  Cell  10 | JP: (R, G, B, σ)\n\n色 + 密度
+          | EN: (manual) (R, G, B, σ)\n\n色 + 密度
+          | Code: ax.text(0.7, 0.5, '(R, G, B, σ)\n\n色 + 密度', ha='center', fontsize=10)
+
+  Cell  10 | JP: （レイに沿って色と密度を積分）
+          | EN: (manual) （レイに沿って色と密度を積分）
+          | Code: ax.text(0.5, 0.05, '（レイに沿って色と密度を積分）', ha='center', fontsize=10)
+
+  Cell  10 | JP: NeRF (Neural Radiance Field) の概念
+          | EN: (manual) NeRF (Neural Radiance Field) の概念
+          | Code: ax.set_title('NeRF (Neural Radiance Field) の概念', fontsize=16, fontweight='bold')
+
+  Cell  11 | JP: 3Dガウシアン群
+          | EN: (manual) 3Dガウシアン群
+          | Code: ax.text(0.25, 0.85, '3Dガウシアン群', ha='center', fontsize=12, fontweight='bold')
+
+  Cell  11 | JP: 各ガウシアンのパラメータ:
+          | EN: (manual) 各ガウシアンのパラメータ:
+          | Code: ax.text(0.55, 0.8, '各ガウシアンのパラメータ:', ha='left', fontsize=11, fontweight='bold')
+
+  Cell  11 | JP: レンダリング:
+          | EN: (manual) レンダリング:
+          | Code: ax.text(0.55, 0.3, 'レンダリング:', ha='left', fontsize=11, fontweight='bold')
+
+  Cell  11 | JP: 1. ガウシアンを2Dに投影\n2. タイルベースのソート\n3. αブレンディング
+          | EN: (manual) 1. ガウシアンを2Dに投影\n2. タイルベースのソート\n3. αブレンディング
+          | Code: ax.text(0.55, 0.2, '1. ガウシアンを2Dに投影\n2. タイルベースのソート\n3. αブレンディング',
+
+  Cell  11 | JP: 【Unit 0.4との接続】\n受容野 ≈ ガウシアンの広がり\n局所性 ≈ 有限サポートのスプラット
+          | EN: (manual) 【Unit 0.4との接続】\n受容野 ≈ ガウシアンの広がり\n局所性 ≈ 有限サポートのスプラット
+          | Code: ax.text(0.1, 0.1, '【Unit 0.4との接続】\n受容野 ≈ ガウシアンの広がり\n局所性 ≈ 有限サポートのスプラット',
+
+  Cell  11 | JP: 3D Gaussian Splatting (3DGS) の概念
+          | EN: (manual) 3D Gaussian Splatting (3DGS) の概念
+          | Code: ax.set_title('3D Gaussian Splatting (3DGS) の概念', fontsize=16, fontweight='bold')
+
+  Cell  14 | JP: ← 今ここ！
+          | EN: (manual) ← 今ここ！
+          | Code: ax.text(0.15, 0.98, '← 今ここ！', ha='center', fontsize=12, color='red', fontweight='bold')
+
+  Cell  14 | JP: NeoVerseプロジェクトへのロードマップ
+          | EN: (manual) NeoVerseプロジェクトへのロードマップ
+          | Code: ax.set_title('NeoVerseプロジェクトへのロードマップ', fontsize=16, fontweight='bold')
+
+  Cell  18 | JP: Unit 0.4 完了！
+          | EN: (manual) Unit 0.4 完了！
+          | Code: ax.text(0.5, 0.7, 'Unit 0.4 完了！', ha='center', va='center',
+
+  Cell  18 | JP: 空間の帰納バイアス：CNN & 局所性の科学
+          | EN: (manual) 空間の帰納バイアス：CNN & 局所性の科学
+          | Code: ax.text(0.5, 0.5, '空間の帰納バイアス：CNN & 局所性の科学',
+
+  Cell  18 | JP: 23ノートブック（80-102）
+          | EN: (manual) 23ノートブック（80-102）
+          | Code: ax.text(0.5, 0.3, '23ノートブック（80-102）',
+
+  Cell  18 | JP: 次は3D理解の世界へ...
+          | EN: (manual) 次は3D理解の世界へ...
+          | Code: ax.text(0.5, 0.15, '次は3D理解の世界へ...',
+
+==============================================================================================================
+ 87_receptive_field_depth_v1.ipynb  (42 instances)
+==============================================================================================================
+  Cell   3 | JP: 入力層 ({input_size}×{input_size})
+          | EN: (manual) 入力層 ({input_size}×{input_size})
+          | Code: ax.set_title(f'入力層 ({input_size}×{input_size})', fontsize=14)
+
+  Cell   3 | JP: 受容野 = カーネルサイズ
+          | EN: (manual) 受容野 = カーネルサイズ
+          | Code: ax.set_xlabel('受容野 = カーネルサイズ', fontsize=12)
+
+  Cell   3 | JP: 出力層 ({output_size}×{output_size})
+          | EN: OutputLayer ({output_size}×{output_size})
+          | Code: ax.set_title(f'出力層 ({output_size}×{output_size})', fontsize=14)
+
+  Cell   3 | JP: この1ピクセル
+          | EN: (manual) この1ピクセル
+          | Code: ax.set_xlabel('この1ピクセル', fontsize=12)
+
+  Cell   3 | JP: ←\n対応
+          | EN: (manual) ←\n対応
+          | Code: fig.text(0.5, 0.5, '←\n対応', fontsize=16, ha='center', va='center')
+
+  Cell   3 | JP: 単一層の受容野：{kernel_size}×{kernel_size}カーネル → RF = {kernel_size}×{kernel_size}
+          | EN: (manual) 単一層の受容野：{kernel_size}×{kernel_size}カーネル → RF = {kernel_size}×{kernel_size}
+          | Code: plt.suptitle(f'単一層の受容野：{kernel_size}×{kernel_size}カーネル → RF = {kernel_size}×{kernel_size}',
+
+  Cell   5 | JP: 入力 ({input_size}×{input_size})\n2層目のRF = {rf2}×{rf2}
+          | EN: (manual) 入力 ({input_size}×{input_size})\n2層目のRF = {rf2}×{rf2}
+          | Code: ax.set_title(f'入力 ({input_size}×{input_size})\n2層目のRF = {rf2}×{rf2}', fontsize=14)
+
+  Cell   5 | JP: 1層目出力 ({l1_size}×{l1_size})\n2層目のカーネル = {k2}×{k2}
+          | EN: (manual) 1層目出力 ({l1_size}×{l1_size})\n2層目のカーネル = {k2}×{k2}
+          | Code: ax.set_title(f'1層目出力 ({l1_size}×{l1_size})\n2層目のカーネル = {k2}×{k2}', fontsize=14)
+
+  Cell   5 | JP: 2層目出力 ({l2_size}×{l2_size})\nこの1ピクセル
+          | EN: (manual) 2層目出力 ({l2_size}×{l2_size})\nこの1ピクセル
+          | Code: ax.set_title(f'2層目出力 ({l2_size}×{l2_size})\nこの1ピクセル', fontsize=14)
+
+  Cell   5 | JP: 2層の畳み込みによる受容野の成長
+          | EN: (manual) 2層の畳み込みによる受容野の成長
+          | Code: plt.suptitle('2層の畳み込みによる受容野の成長', fontsize=16, fontweight='bold')
+
+  Cell   7 | JP: 入力:
+          | EN: (manual) 入力:
+          | Code: ax.text(-1, y_input + 0.5, '入力:', ha='right', va='center', fontsize=12, fontweight='bold')
+
+  Cell   7 | JP: 1層目:
+          | EN: (manual) 1層目:
+          | Code: ax.text(-1, y_l1 + 0.5, '1層目:', ha='right', va='center', fontsize=12, fontweight='bold')
+
+  Cell   7 | JP: 2層目:
+          | EN: (manual) 2層目:
+          | Code: ax.text(-1, y_l2 + 0.5, '2層目:', ha='right', va='center', fontsize=12, fontweight='bold')
+
+  Cell   7 | JP: B が見る: [2,3,4]
+          | EN: (manual) B が見る: [2,3,4]
+          | Code: ax.text(0.5, y_detail, 'B が見る: [2,3,4]', fontsize=11, color='darkred')
+
+  Cell   7 | JP: C が見る: [3,4,5]
+          | EN: (manual) C が見る: [3,4,5]
+          | Code: ax.text(2.5, y_detail, 'C が見る: [3,4,5]', fontsize=11, color='darkred')
+
+  Cell   7 | JP: D が見る: [4,5,6]
+          | EN: (manual) D が見る: [4,5,6]
+          | Code: ax.text(4.5, y_detail, 'D が見る: [4,5,6]', fontsize=11, color='darkred')
+
+  Cell   7 | JP: Y の受容野: [2,3,4,5,6] = 5ピクセル
+          | EN: (manual) Y の受容野: [2,3,4,5,6] = 5ピクセル
+          | Code: ax.text(3.5, 0.3, 'Y の受容野: [2,3,4,5,6] = 5ピクセル',
+
+  Cell   7 | JP: 受容野の重なり：3×3 + 3×3 → 5（重複があるため6にならない）
+          | EN: (manual) 受容野の重なり：3×3 + 3×3 → 5（重複があるため6にならない）
+          | Code: ax.set_title('受容野の重なり：3×3 + 3×3 → 5（重複があるため6にならない）',
+
+  Cell  10 | JP: {k}×{k} カーネル
+          | EN: {k}×{k} Kernel
+          | Code: ax.plot(layers, rfs, 'o-', label=f'{k}×{k} カーネル', linewidth=2, markersize=8)
+
+  Cell  10 | JP: 層の数
+          | EN: (manual) 層の数
+          | Code: ax.set_xlabel('層の数', fontsize=14)
+
+  Cell  10 | JP: 受容野サイズ
+          | EN: (manual) 受容野サイズ
+          | Code: ax.set_ylabel('受容野サイズ', fontsize=14)
+
+  Cell  10 | JP: 層の深さと受容野サイズの関係\n（ストライド=1の場合）
+          | EN: (manual) 層の深さと受容野サイズの関係\n（ストライド=1の場合）
+          | Code: ax.set_title('層の深さと受容野サイズの関係\n（ストライド=1の場合）', fontsize=16, fontweight='bold')
+
+  Cell  14 | JP: 入力 ({input_size}×{input_size})\n2層目のRF = {rf_size}×{rf_size}
+          | EN: (manual) 入力 ({input_size}×{input_size})\n2層目のRF = {rf_size}×{rf_size}
+          | Code: ax.set_title(f'入力 ({input_size}×{input_size})\n2層目のRF = {rf_size}×{rf_size}', fontsize=14)
+
+  Cell  14 | JP: 1層目出力 ({l1_size}×{l1_size})\n3×3カーネル
+          | EN: (manual) 1層目出力 ({l1_size}×{l1_size})\n3×3カーネル
+          | Code: ax.set_title(f'1層目出力 ({l1_size}×{l1_size})\n3×3カーネル', fontsize=14)
+
+  Cell  14 | JP: 2層目出力 ({l2_size}×{l2_size})
+          | EN: (manual) 2層目出力 ({l2_size}×{l2_size})
+          | Code: ax.set_title(f'2層目出力 ({l2_size}×{l2_size})', fontsize=14)
+
+  Cell  14 | JP: ストライド=2の影響：3×3(s=2) + 3×3(s=1) → RF=7×7
+          | EN: (manual) ストライド=2の影響：3×3(s=2) + 3×3(s=1) → RF=7×7
+          | Code: plt.suptitle('ストライド=2の影響：3×3(s=2) + 3×3(s=1) → RF=7×7',
+
+  Cell  17 | JP: すべてstride=1
+          | EN: (manual) すべてstride=1
+          | Code: ax.plot(layers, rfs1, 'o-', label='すべてstride=1', linewidth=2, markersize=8)
+
+  Cell  17 | JP: 2層ごとにstride=2
+          | EN: (manual) 2層ごとにstride=2
+          | Code: ax.plot(layers, rfs2, 's-', label='2層ごとにstride=2', linewidth=2, markersize=8)
+
+  Cell  17 | JP: 層の数
+          | EN: (manual) 層の数
+          | Code: ax.set_xlabel('層の数', fontsize=14)
+
+  Cell  17 | JP: 受容野サイズ
+          | EN: (manual) 受容野サイズ
+          | Code: ax.set_ylabel('受容野サイズ', fontsize=14)
+
+  Cell  17 | JP: ストライドが受容野成長に与える影響
+          | EN: (manual) ストライドが受容野成長に与える影響
+          | Code: ax.set_title('ストライドが受容野成長に与える影響', fontsize=16, fontweight='bold')
+
+  Cell  19 | JP: 入力画像\n(32×32)
+          | EN: Input Image\n(32×32)
+          | Code: ax.set_title('入力画像\n(32×32)', fontsize=14)
+
+  Cell  19 | JP: 層1-2: エッジ\nRF=3-5
+          | EN: (manual) 層1-2: エッジ\nRF=3-5
+          | Code: ax.set_title('層1-2: エッジ\nRF=3-5', fontsize=14)
+
+  Cell  19 | JP: 層3-4: パーツ\nRF=7-9
+          | EN: (manual) 層3-4: パーツ\nRF=7-9
+          | Code: ax.set_title('層3-4: パーツ\nRF=7-9', fontsize=14)
+
+  Cell  19 | JP: 層5+: オブジェクト\nRF=17+
+          | EN: (manual) 層5+: オブジェクト\nRF=17+
+          | Code: ax.set_title('層5+: オブジェクト\nRF=17+', fontsize=14)
+
+  Cell  19 | JP: 受容野と階層的特徴抽象化
+          | EN: (manual) 受容野と階層的特徴抽象化
+          | Code: plt.suptitle('受容野と階層的特徴抽象化', fontsize=16, fontweight='bold')
+
+  Cell  24 | JP: 受容野サイズ
+          | EN: (manual) 受容野サイズ
+          | Code: ax.set_ylabel('受容野サイズ', fontsize=12)
+
+  Cell  24 | JP: VGG16の受容野成長
+          | EN: (manual) VGG16の受容野成長
+          | Code: ax.set_title('VGG16の受容野成長', fontsize=14, fontweight='bold')
+
+  Cell  24 | JP: 入力サイズ (224)
+          | EN: (manual) 入力サイズ (224)
+          | Code: ax.axhline(y=224, color='red', linestyle='--', label='入力サイズ (224)')
+
+  Cell  24 | JP: ResNet-18の受容野成長
+          | EN: (manual) ResNet-18の受容野成長
+          | Code: ax.set_title('ResNet-18の受容野成長', fontsize=14, fontweight='bold')
+
+==============================================================================================================
+ 88_downsampling_v1.ipynb  (47 instances)
+==============================================================================================================
+  Cell   3 | JP: 相対計算量 (%)
+          | EN: (manual) 相対計算量 (%)
+          | Code: ax.set_ylabel('相対計算量 (%)', fontsize=12)
+
+  Cell   3 | JP: 1. 計算量の削減
+          | EN: (manual) 1. 計算量の削減
+          | Code: ax.set_title('1. 計算量の削減', fontsize=14, fontweight='bold')
+
+  Cell   3 | JP: ダウンサンプリングなし
+          | EN: (manual) ダウンサンプリングなし
+          | Code: ax.plot(layers, rf_no_ds, 'o-', label='ダウンサンプリングなし', linewidth=2)
+
+  Cell   3 | JP: ダウンサンプリングあり
+          | EN: (manual) ダウンサンプリングあり
+          | Code: ax.plot(layers, rf_with_ds, 's-', label='ダウンサンプリングあり', linewidth=2)
+
+  Cell   3 | JP: 層
+          | EN: Layer
+          | Code: ax.set_xlabel('層', fontsize=12)
+
+  Cell   3 | JP: 受容野サイズ
+          | EN: (manual) 受容野サイズ
+          | Code: ax.set_ylabel('受容野サイズ', fontsize=12)
+
+  Cell   3 | JP: 2. 受容野の急速な拡大
+          | EN: (manual) 2. 受容野の急速な拡大
+          | Code: ax.set_title('2. 受容野の急速な拡大', fontsize=14, fontweight='bold')
+
+  Cell   3 | JP: Max Poolingによる並進不変性
+          | EN: (manual) Max Poolingによる並進不変性
+          | Code: ax.text(0.5, 0.9, 'Max Poolingによる並進不変性',
+
+  Cell   3 | JP: 入力1:
+          | EN: (manual) 入力1:
+          | Code: ax.text(0.1, 0.7, '入力1:', transform=ax.transAxes, fontsize=12)
+
+  Cell   3 | JP: 入力2:
+          | EN: (manual) 入力2:
+          | Code: ax.text(0.1, 0.4, '入力2:', transform=ax.transAxes, fontsize=12)
+
+  Cell   3 | JP: 出力: 1
+          | EN: Output: 1
+          | Code: ax.text(0.6, 0.55, '出力: 1', transform=ax.transAxes, fontsize=14, color='red')
+
+  Cell   3 | JP: 位置が違っても\n同じ出力！
+          | EN: (manual) 位置が違っても\n同じ出力！
+          | Code: ax.text(0.5, 0.15, '位置が違っても\n同じ出力！',
+
+  Cell   3 | JP: 3. 並進不変性の強化
+          | EN: (manual) 3. 並進不変性の強化
+          | Code: ax.set_title('3. 並進不変性の強化', fontsize=14, fontweight='bold')
+
+  Cell   5 | JP: 入力 (4×4)
+          | EN: (manual) 入力 (4×4)
+          | Code: ax.set_title('入力 (4×4)', fontsize=14, fontweight='bold')
+
+  Cell   5 | JP: 各2×2ウィンドウから\n最大値を選択
+          | EN: (manual) 各2×2ウィンドウから\n最大値を選択
+          | Code: ax.text(0.5, 0.4, '各2×2ウィンドウから\n最大値を選択', fontsize=14, ha='center',
+
+  Cell   5 | JP: 左上: max({input_map[0,0]},{input_map[0,1]},{input_map[1,0]},{input_map[1,1]}) = {input_map[0:2,0:2].max()}
+          | EN: (manual) 左上: max({input_map[0,0]},{input_map[0,1]},{input_map[1,0]},{input_map[1,1]}) = {input_map[0:2,0:2].max()}
+          | Code: ax.text(0.5, 0.15, f'左上: max({input_map[0,0]},{input_map[0,1]},{input_map[1,0]},{input_map[1,1]}) = {i...
+
+  Cell   5 | JP: 出力 (2×2)
+          | EN: Output (2×2)
+          | Code: ax.set_title('出力 (2×2)', fontsize=14, fontweight='bold')
+
+  Cell   5 | JP: Max Pooling: 各領域の最大値を抽出
+          | EN: (manual) Max Pooling: 各領域の最大値を抽出
+          | Code: plt.suptitle('Max Pooling: 各領域の最大値を抽出', fontsize=16, fontweight='bold')
+
+  Cell   8 | JP: 入力
+          | EN: (manual) 入力
+          | Code: ax.set_title('入力', fontsize=14)
+
+  Cell   8 | JP: MaxPool出力
+          | EN: MaxPoolOutput
+          | Code: ax.set_title('MaxPool出力', fontsize=14)
+
+  Cell   8 | JP: 勾配（∂L/∂x）
+          | EN: (manual) 勾配（∂L/∂x）
+          | Code: ax.set_title('勾配（∂L/∂x）', fontsize=14)
+
+  Cell   8 | JP: Max Poolingの勾配：最大値の位置のみに勾配が流れる
+          | EN: (manual) Max Poolingの勾配：最大値の位置のみに勾配が流れる
+          | Code: plt.suptitle('Max Poolingの勾配：最大値の位置のみに勾配が流れる', fontsize=16, fontweight='bold')
+
+  Cell  10 | JP: 入力 (4×4)
+          | EN: (manual) 入力 (4×4)
+          | Code: ax.set_title('入力 (4×4)', fontsize=14, fontweight='bold')
+
+  Cell  10 | JP: 各2×2ウィンドウの\n平均値を計算
+          | EN: (manual) 各2×2ウィンドウの\n平均値を計算
+          | Code: ax.text(0.5, 0.4, '各2×2ウィンドウの\n平均値を計算', fontsize=14, ha='center',
+
+  Cell  10 | JP: 左上: ({input_map[0,0]:.0f}+{input_map[0,1]:.0f}+{input_map[1,0]:.0f}+{input_map[1,1]:.0f})/4 = {avg_val:.1f}
+          | EN: (manual) 左上: ({input_map[0,0]:.0f}+{input_map[0,1]:.0f}+{input_map[1,0]:.0f}+{input_map[1,1]:.0f})/4 = {avg_val:.1f}
+          | Code: ax.text(0.5, 0.15, f'左上: ({input_map[0,0]:.0f}+{input_map[0,1]:.0f}+{input_map[1,0]:.0f}+{input_map[1,...
+
+  Cell  10 | JP: 出力 (2×2)
+          | EN: Output (2×2)
+          | Code: ax.set_title('出力 (2×2)', fontsize=14, fontweight='bold')
+
+  Cell  10 | JP: Average Pooling: 各領域の平均値を計算
+          | EN: (manual) Average Pooling: 各領域の平均値を計算
+          | Code: plt.suptitle('Average Pooling: 各領域の平均値を計算', fontsize=16, fontweight='bold')
+
+  Cell  11 | JP: 入力画像 (64×64)
+          | EN: Input Image (64×64)
+          | Code: axes[0, 0].set_title('入力画像 (64×64)', fontsize=12)
+
+  Cell  11 | JP: Max Pooling vs Average Pooling の比較
+          | EN: (manual) Max Pooling vs Average Pooling の比較
+          | Code: plt.suptitle('Max Pooling vs Average Pooling の比較', fontsize=16, fontweight='bold')
+
+  Cell  14 | JP: 入力特徴マップ\n({C}チャンネル × {H}×{W})
+          | EN: (manual) 入力特徴マップ\n({C}チャンネル × {H}×{W})
+          | Code: ax.set_title(f'入力特徴マップ\n({C}チャンネル × {H}×{W})', fontsize=14)
+
+  Cell  14 | JP: 各チャンネルの\n全ピクセルの平均
+          | EN: (manual) 各チャンネルの\n全ピクセルの平均
+          | Code: ax.text(0.5, 0.4, '各チャンネルの\n全ピクセルの平均', fontsize=14, ha='center',
+
+  Cell  14 | JP: 出力: ({C},) ベクトル
+          | EN: (manual) 出力: ({C},) ベクトル
+          | Code: ax.text(0.5, 0.15, f'出力: ({C},) ベクトル', fontsize=12, ha='center',
+
+  Cell  14 | JP: 平均値
+          | EN: (manual) 平均値
+          | Code: ax.set_xlabel('平均値', fontsize=12)
+
+  Cell  14 | JP: GAP出力\n({C},) ベクトル
+          | EN: (manual) GAP出力\n({C},) ベクトル
+          | Code: ax.set_title(f'GAP出力\n({C},) ベクトル', fontsize=14)
+
+  Cell  18 | JP: 入力 ({input_size}×{input_size})
+          | EN: (manual) 入力 ({input_size}×{input_size})
+          | Code: ax.set_title(f'入力 ({input_size}×{input_size})', fontsize=14)
+
+  Cell  18 | JP: 3×3カーネル、stride=2の位置
+          | EN: (manual) 3×3カーネル、stride=2の位置
+          | Code: ax.set_xlabel('3×3カーネル、stride=2の位置', fontsize=11)
+
+  Cell  18 | JP: 出力サイズ: (6-3)/2 + 1 = 2
+          | EN: (manual) 出力サイズ: (6-3)/2 + 1 = 2
+          | Code: ax.text(0.5, 0.1, '出力サイズ: (6-3)/2 + 1 = 2', fontsize=12, ha='center',
+
+  Cell  18 | JP: 出力 ({output_size}×{output_size})
+          | EN: Output ({output_size}×{output_size})
+          | Code: ax.set_title(f'出力 ({output_size}×{output_size})', fontsize=14)
+
+  Cell  18 | JP: ストライド畳み込みによるダウンサンプリング
+          | EN: (manual) ストライド畳み込みによるダウンサンプリング
+          | Code: plt.suptitle('ストライド畳み込みによるダウンサンプリング', fontsize=16, fontweight='bold')
+
+  Cell  19 | JP: 入力 (8×8)
+          | EN: (manual) 入力 (8×8)
+          | Code: axes[0, 0].set_title('入力 (8×8)', fontsize=12)
+
+  Cell  19 | JP: Strided Conv 3×3, s=2\n(4×4, ランダム重み)
+          | EN: (manual) Strided Conv 3×3, s=2\n(4×4, ランダム重み)
+          | Code: axes[1, 1].set_title('Strided Conv 3×3, s=2\n(4×4, ランダム重み)', fontsize=12)
+
+  Cell  19 | JP: プーリング vs ストライド畳み込み
+          | EN: Pooling vs StrideConvolution
+          | Code: plt.suptitle('プーリング vs ストライド畳み込み', fontsize=16, fontweight='bold')
+
+  Cell  23 | JP: 入力（均一値）
+          | EN: (manual) 入力（均一値）
+          | Code: axes[0].set_title('入力（均一値）', fontsize=12)
+
+  Cell  23 | JP: 転置畳み込み出力\n(チェッカーボード)
+          | EN: (manual) 転置畳み込み出力\n(チェッカーボード)
+          | Code: axes[1].set_title('転置畳み込み出力\n(チェッカーボード)', fontsize=12)
+
+  Cell  23 | JP: カーネル4×4\n(均一出力)
+          | EN: (manual) カーネル4×4\n(均一出力)
+          | Code: axes[2].set_title('カーネル4×4\n(均一出力)', fontsize=12)
+
+  Cell  23 | JP: チェッカーボードアーティファクト（転置畳み込みで顕著）
+          | EN: (manual) チェッカーボードアーティファクト（転置畳み込みで顕著）
+          | Code: plt.suptitle('チェッカーボードアーティファクト（転置畳み込みで顕著）', fontsize=14, fontweight='bold')
+
+==============================================================================================================
+ 89_receptive_field_3dgs_v1.ipynb  (48 instances)
+==============================================================================================================
+  Cell   3 | JP: 単一の3D Gaussian\n（2Dスライス）
+          | EN: (manual) 単一の3D Gaussian\n（2Dスライス）
+          | Code: ax.set_title('単一の3D Gaussian\n（2Dスライス）', fontsize=14)
+
+  Cell   3 | JP: 複数Gaussianの合成\n（3DGSの本質）
+          | EN: (manual) 複数Gaussianの合成\n（3DGSの本質）
+          | Code: ax.set_title('複数Gaussianの合成\n（3DGSの本質）', fontsize=14)
+
+  Cell   3 | JP: 合成結果
+          | EN: (manual) 合成結果
+          | Code: ax.plot(x_1d, total, 'k-', linewidth=2, label='合成結果')
+
+  Cell   3 | JP: Gaussianの加算合成\n（各点への寄与）
+          | EN: (manual) Gaussianの加算合成\n（各点への寄与）
+          | Code: ax.set_title('Gaussianの加算合成\n（各点への寄与）', fontsize=14)
+
+  Cell   3 | JP: 位置
+          | EN: (manual) 位置
+          | Code: ax.set_xlabel('位置')
+
+  Cell   3 | JP: 強度
+          | EN: (manual) 強度
+          | Code: ax.set_ylabel('強度')
+
+  Cell   3 | JP: 3D Gaussian Splatting: Gaussianの集合でシーンを表現
+          | EN: (manual) 3D Gaussian Splatting: Gaussianの集合でシーンを表現
+          | Code: plt.suptitle('3D Gaussian Splatting: Gaussianの集合でシーンを表現', fontsize=16, fontweight='bold')
+
+  Cell   6 | JP: 出力\nニューロン
+          | EN: (manual) 出力\nニューロン
+          | Code: ax.text(center + 1, center - 1, '出力\nニューロン', fontsize=10)
+
+  Cell   6 | JP: CNN: 受容野\n（矩形の影響範囲）
+          | EN: (manual) CNN: 受容野\n（矩形の影響範囲）
+          | Code: ax.set_title('CNN: 受容野\n（矩形の影響範囲）', fontsize=14, fontweight='bold')
+
+  Cell   6 | JP: 入力画像の空間次元
+          | EN: (manual) 入力画像の空間次元
+          | Code: ax.set_xlabel('入力画像の空間次元', fontsize=11)
+
+  Cell   6 | JP: 層{i+1} (RF={rf})
+          | EN: Layer{i+1} (RF={rf})
+          | Code: legend_elements = [Patch(facecolor=c, alpha=0.5, label=f'層{i+1} (RF={rf})')
+
+  Cell   6 | JP: Gaussian\n中心
+          | EN: (manual) Gaussian\n中心
+          | Code: ax.text(0.3, -0.3, 'Gaussian\n中心', fontsize=10)
+
+  Cell   6 | JP: 3DGS: Gaussian影響範囲\n（楕円形の影響範囲）
+          | EN: (manual) 3DGS: Gaussian影響範囲\n（楕円形の影響範囲）
+          | Code: ax.set_title('3DGS: Gaussian影響範囲\n（楕円形の影響範囲）', fontsize=14, fontweight='bold')
+
+  Cell   6 | JP: 空間座標
+          | EN: (manual) 空間座標
+          | Code: ax.set_xlabel('空間座標', fontsize=11)
+
+  Cell   6 | JP: 受容野 vs Gaussian影響範囲：局所性の表現
+          | EN: (manual) 受容野 vs Gaussian影響範囲：局所性の表現
+          | Code: plt.suptitle('受容野 vs Gaussian影響範囲：局所性の表現', fontsize=16, fontweight='bold')
+
+  Cell   9 | JP: 空間的相関のある信号\n（近くのピクセルは似た値）
+          | EN: (manual) 空間的相関のある信号\n（近くのピクセルは似た値）
+          | Code: ax.set_title('空間的相関のある信号\n（近くのピクセルは似た値）', fontsize=12)
+
+  Cell   9 | JP: 相関
+          | EN: (manual) 相関
+          | Code: ax.text(25, 22, '相関', color='white', fontsize=10, ha='center')
+
+  Cell   9 | JP: CNN: 局所カーネル\n（Gaussian blur風の重み）
+          | EN: (manual) CNN: 局所カーネル\n（Gaussian blur風の重み）
+          | Code: ax.set_title('CNN: 局所カーネル\n（Gaussian blur風の重み）', fontsize=12)
+
+  Cell   9 | JP: 3DGS: Gaussian減衰\n（中心から離れると影響減少）
+          | EN: (manual) 3DGS: Gaussian減衰\n（中心から離れると影響減少）
+          | Code: ax.set_title('3DGS: Gaussian減衰\n（中心から離れると影響減少）', fontsize=12)
+
+  Cell   9 | JP: 全結合 O(n²)
+          | EN: (manual) 全結合 O(n²)
+          | Code: ax.plot(n_values, fc_ops, 'r-o', label='全結合 O(n²)', linewidth=2)
+
+  Cell   9 | JP: 局所処理 O(n×k²)
+          | EN: (manual) 局所処理 O(n×k²)
+          | Code: ax.plot(n_values, local_ops, 'b-s', label='局所処理 O(n×k²)', linewidth=2)
+
+  Cell   9 | JP: 入力サイズ n
+          | EN: (manual) 入力サイズ n
+          | Code: ax.set_xlabel('入力サイズ n', fontsize=12)
+
+  Cell   9 | JP: 計算量
+          | EN: (manual) 計算量
+          | Code: ax.set_ylabel('計算量', fontsize=12)
+
+  Cell   9 | JP: 計算効率: 局所処理の優位性
+          | EN: (manual) 計算効率: 局所処理の優位性
+          | Code: ax.set_title('計算効率: 局所処理の優位性', fontsize=12)
+
+  Cell   9 | JP: 同じ局所パターンが\n異なる位置に出現
+          | EN: (manual) 同じ局所パターンが\n異なる位置に出現
+          | Code: ax.set_title('同じ局所パターンが\n異なる位置に出現', fontsize=12)
+
+  Cell   9 | JP: 局所 → 大域 への階層構築
+          | EN: (manual) 局所 → 大域 への階層構築
+          | Code: ax.text(0.5, 0.9, '局所 → 大域 への階層構築', fontsize=14,
+
+  Cell   9 | JP: CNN: 層を重ねてRF拡大\n\n3DGS: 異なるスケールの\nGaussianを組み合わせ
+          | EN: (manual) CNN: 層を重ねてRF拡大\n\n3DGS: 異なるスケールの\nGaussianを組み合わせ
+          | Code: ax.text(0.7, 0.5, 'CNN: 層を重ねてRF拡大\n\n3DGS: 異なるスケールの\nGaussianを組み合わせ',
+
+  Cell   9 | JP: 階層的な表現構築
+          | EN: (manual) 階層的な表現構築
+          | Code: ax.set_title('階層的な表現構築', fontsize=12)
+
+  Cell   9 | JP: 局所性：CNNと3DGSの共通原理
+          | EN: (manual) 局所性：CNNと3DGSの共通原理
+          | Code: plt.suptitle('局所性：CNNと3DGSの共通原理', fontsize=16, fontweight='bold')
+
+  Cell  11 | JP: 3DGS: マルチスケールGaussianによる表現
+          | EN: (manual) 3DGS: マルチスケールGaussianによる表現
+          | Code: plt.suptitle('3DGS: マルチスケールGaussianによる表現', fontsize=14, fontweight='bold')
+
+  Cell  12 | JP: CNN\n階層的特徴
+          | EN: (manual) CNN\n階層的特徴
+          | Code: axes[0, 0].set_ylabel('CNN\n階層的特徴', fontsize=12, rotation=0, ha='right', va='center')
+
+  Cell  12 | JP: 3DGS\nGaussianスケール
+          | EN: (manual) 3DGS\nGaussianスケール
+          | Code: axes[1, 0].set_ylabel('3DGS\nGaussianスケール', fontsize=12, rotation=0, ha='right', va='center')
+
+  Cell  12 | JP: CNN受容野と3DGS Gaussianスケールの対応
+          | EN: (manual) CNN受容野と3DGS Gaussianスケールの対応
+          | Code: plt.suptitle('CNN受容野と3DGS Gaussianスケールの対応', fontsize=16, fontweight='bold')
+
+  Cell  14 | JP: CNN: 離散的重み付き和\n$y = \sum w_{ij} \cdot x_{ij}$
+          | EN: (manual) CNN: 離散的重み付き和\n$y = \sum w_{ij} \cdot x_{ij}$
+          | Code: ax.set_title('CNN: 離散的重み付き和\n$y = \sum w_{ij} \cdot x_{ij}$', fontsize=14)
+
+  Cell  14 | JP: 3DGS: Gaussian重み関数\n$\mathcal{G}(x,y) = e^{-\\frac{x^2+y^2}{2\sigma^2}}$
+          | EN: (manual) 3DGS: Gaussian重み関数\n$\mathcal{G}(x,y) = e^{-\\frac{x^2+y^2}{2\sigma^2}}$
+          | Code: ax.set_title('3DGS: Gaussian重み関数\n$\mathcal{G}(x,y) = e^{-\\frac{x^2+y^2}{2\sigma^2}}$', fontsize=14)
+
+  Cell  14 | JP: 共通の数学的構造
+          | EN: (manual) 共通の数学的構造
+          | Code: ax.text(0.5, 0.85, '共通の数学的構造', fontsize=16, ha='center',
+
+  Cell  14 | JP: CNN: $w_i$ = 学習されたカーネル重み（離散）
+          | EN: (manual) CNN: $w_i$ = 学習されたカーネル重み（離散）
+          | Code: ax.text(0.5, 0.45, 'CNN: $w_i$ = 学習されたカーネル重み（離散）',
+
+  Cell  14 | JP: 3DGS: $w_i$ = Gaussian関数値（連続）
+          | EN: (manual) 3DGS: $w_i$ = Gaussian関数値（連続）
+          | Code: ax.text(0.5, 0.30, '3DGS: $w_i$ = Gaussian関数値（連続）',
+
+  Cell  14 | JP: 両者とも「局所的な重み付き集約」
+          | EN: (manual) 両者とも「局所的な重み付き集約」
+          | Code: ax.text(0.5, 0.1, '両者とも「局所的な重み付き集約」',
+
+  Cell  14 | JP: 数学的アナロジー: 重み付き集約
+          | EN: (manual) 数学的アナロジー: 重み付き集約
+          | Code: plt.suptitle('数学的アナロジー: 重み付き集約', fontsize=16, fontweight='bold')
+
+  Cell  16 | JP: 入力（点の集合）
+          | EN: (manual) 入力（点の集合）
+          | Code: axes[0, 0].set_title('入力（点の集合）', fontsize=12)
+
+  Cell  16 | JP: CNN解釈:\n\n各点を中心に\nGaussianカーネルで\n重み付け平均
+          | EN: (manual) CNN解釈:\n\n各点を中心に\nGaussianカーネルで\n重み付け平均
+          | Code: axes[1, 0].text(0.5, 0.5, 'CNN解釈:\n\n各点を中心に\nGaussianカーネルで\n重み付け平均',
+
+  Cell  16 | JP: 3DGS解釈:\n各点のGaussianが\nこのσで「にじむ」
+          | EN: (manual) 3DGS解釈:\n各点のGaussianが\nこのσで「にじむ」
+          | Code: ax.text(0.5, 0.2, '3DGS解釈:\n各点のGaussianが\nこのσで「にじむ」',
+
+  Cell  16 | JP: Gaussian Blur: CNNと3DGSの架け橋
+          | EN: (manual) Gaussian Blur: CNNと3DGSの架け橋
+          | Code: plt.suptitle('Gaussian Blur: CNNと3DGSの架け橋', fontsize=16, fontweight='bold')
+
+  Cell  18 | JP: 局所的\n重み付き\n集約
+          | EN: (manual) 局所的\n重み付き\n集約
+          | Code: ax.text(0.5, 0.5, '局所的\n重み付き\n集約', fontsize=14, ha='center', va='center',
+
+  Cell  18 | JP: CNN\n受容野
+          | EN: CNN\nReceptive Field
+          | Code: ax.text(0.2, 0.5, 'CNN\n受容野', fontsize=12, ha='center', va='center')
+
+  Cell  18 | JP: 共通原理
+          | EN: (manual) 共通原理
+          | Code: ax.text(0.5, 0.2, '共通原理', fontsize=14, ha='center', fontweight='bold')
+
+  Cell  18 | JP: CNN受容野と3DGS Gaussian：統一的理解
+          | EN: (manual) CNN受容野と3DGS Gaussian：統一的理解
+          | Code: ax.text(0.5, 0.95, 'CNN受容野と3DGS Gaussian：統一的理解', fontsize=18,
+
+==============================================================================================================
+ 90_inductive_bias_intro_v1.ipynb  (54 instances)
+==============================================================================================================
+  Cell   3 | JP: 観測データ
+          | EN: (manual) 観測データ
+          | Code: ax.scatter(x_data, y_data, c='blue', s=100, zorder=5, label='観測データ')
+
+  Cell   3 | JP: データのみ\n（帰納バイアスなし）
+          | EN: (manual) データのみ\n（帰納バイアスなし）
+          | Code: ax.set_title('データのみ\n（帰納バイアスなし）', fontsize=14)
+
+  Cell   3 | JP: x=4での予測は？\n無限の可能性...
+          | EN: (manual) x=4での予測は？\n無限の可能性...
+          | Code: ax.text(4, 3, 'x=4での予測は？\n無限の可能性...', fontsize=11,
+
+  Cell   3 | JP: 線形フィット
+          | EN: (manual) 線形フィット
+          | Code: ax.plot(x_plot, y_linear, 'g-', linewidth=2, label='線形フィット')
+
+  Cell   3 | JP: 線形モデル\n「直線に従う」という仮定
+          | EN: (manual) 線形モデル\n「直線に従う」という仮定
+          | Code: ax.set_title('線形モデル\n「直線に従う」という仮定', fontsize=14)
+
+  Cell   3 | JP: 予測: {y_pred:.1f}
+          | EN: Prediction: {y_pred:.1f}
+          | Code: ax.text(4, y_pred + 1.5, f'予測: {y_pred:.1f}', fontsize=11, ha='center', color='red')
+
+  Cell   3 | JP: 4次多項式
+          | EN: (manual) 4次多項式
+          | Code: ax.plot(x_plot, y_poly, 'r-', linewidth=2, label='4次多項式')
+
+  Cell   3 | JP: 高次多項式\n「複雑な曲線」という仮定
+          | EN: (manual) 高次多項式\n「複雑な曲線」という仮定
+          | Code: ax.set_title('高次多項式\n「複雑な曲線」という仮定', fontsize=14)
+
+  Cell   3 | JP: 予測: {y_pred_poly:.1f}
+          | EN: Prediction: {y_pred_poly:.1f}
+          | Code: ax.text(4, y_pred_poly - 2, f'予測: {y_pred_poly:.1f}', fontsize=11, ha='center', color='red')
+
+  Cell   3 | JP: 帰納バイアス：異なる仮定 → 異なる予測
+          | EN: (manual) 帰納バイアス：異なる仮定 → 異なる予測
+          | Code: plt.suptitle('帰納バイアス：異なる仮定 → 異なる予測', fontsize=16, fontweight='bold')
+
+  Cell   6 | JP: 線形モデル ✓
+          | EN: (manual) 線形モデル ✓
+          | Code: ax.plot(x1, np.polyval(coeffs, x1), 'g-', linewidth=2, label='線形モデル ✓')
+
+  Cell   6 | JP: 問題1: 線形関係\n線形モデルが良い
+          | EN: (manual) 問題1: 線形関係\n線形モデルが良い
+          | Code: ax.set_title('問題1: 線形関係\n線形モデルが良い', fontsize=14)
+
+  Cell   6 | JP: 線形モデル ✗
+          | EN: (manual) 線形モデル ✗
+          | Code: ax.plot(x2, np.polyval(coeffs, x2), 'r--', linewidth=2, alpha=0.5, label='線形モデル ✗')
+
+  Cell   6 | JP: 周期モデル ✓
+          | EN: (manual) 周期モデル ✓
+          | Code: ax.plot(x2, np.sin(x2), 'g-', linewidth=2, label='周期モデル ✓')
+
+  Cell   6 | JP: 問題2: 周期的関係\n線形モデルは失敗
+          | EN: (manual) 問題2: 周期的関係\n線形モデルは失敗
+          | Code: ax.set_title('問題2: 周期的関係\n線形モデルは失敗', fontsize=14)
+
+  Cell   6 | JP: 問題3: ランダム\nどのモデルも同じ（予測不可能）
+          | EN: (manual) 問題3: ランダム\nどのモデルも同じ（予測不可能）
+          | Code: ax.set_title('問題3: ランダム\nどのモデルも同じ（予測不可能）', fontsize=14)
+
+  Cell   6 | JP: No Free Lunch: 問題に合った帰納バイアスが必要
+          | EN: (manual) No Free Lunch: 問題に合った帰納バイアスが必要
+          | Code: plt.suptitle('No Free Lunch: 問題に合った帰納バイアスが必要', fontsize=16, fontweight='bold')
+
+  Cell   9 | JP: 強い関係
+          | EN: (manual) 強い関係
+          | Code: ax.annotate('強い関係', xy=(3.5, 3.5), xytext=(5.5, 5.5),
+
+  Cell   9 | JP: 弱い関係
+          | EN: (manual) 弱い関係
+          | Code: ax.annotate('弱い関係', xy=(3.5, 3.5), xytext=(0.5, 0.5),
+
+  Cell   9 | JP: 1. 局所性\n「近くのピクセルは関連性が高い」
+          | EN: (manual) 1. 局所性\n「近くのピクセルは関連性が高い」
+          | Code: ax.set_title('1. 局所性\n「近くのピクセルは関連性が高い」', fontsize=14, fontweight='bold')
+
+  Cell   9 | JP: 画像1
+          | EN: (manual) 画像1
+          | Code: ax.text(3.5, -0.5, '画像1', fontsize=11, ha='center')
+
+  Cell   9 | JP: 画像2
+          | EN: (manual) 画像2
+          | Code: ax.text(3.5, 8.5, '画像2', fontsize=11, ha='center')
+
+  Cell   9 | JP: 同じカーネルで\n同じ特徴を検出
+          | EN: (manual) 同じカーネルで\n同じ特徴を検出
+          | Code: ax.text(3.5, 15, '同じカーネルで\n同じ特徴を検出', fontsize=11, ha='center',
+
+  Cell   9 | JP: 2. 平行移動等変性\n「同じパターンは同じ方法で処理」
+          | EN: (manual) 2. 平行移動等変性\n「同じパターンは同じ方法で処理」
+          | Code: ax.set_title('2. 平行移動等変性\n「同じパターンは同じ方法で処理」', fontsize=14, fontweight='bold')
+
+  Cell   9 | JP: 層を重ねて\n抽象度UP
+          | EN: (manual) 層を重ねて\n抽象度UP
+          | Code: ax.text(0.85, 0.5, '層を重ねて\n抽象度UP', fontsize=11,
+
+  Cell   9 | JP: 3. 階層性\n「単純→複雑を段階的に構築」
+          | EN: (manual) 3. 階層性\n「単純→複雑を段階的に構築」
+          | Code: ax.set_title('3. 階層性\n「単純→複雑を段階的に構築」', fontsize=14, fontweight='bold')
+
+  Cell   9 | JP: CNNの3つの帰納バイアス
+          | EN: (manual) CNNの3つの帰納バイアス
+          | Code: plt.suptitle('CNNの3つの帰納バイアス', fontsize=16, fontweight='bold')
+
+  Cell  13 | JP: 強い帰納バイアス（CNN）
+          | EN: (manual) 強い帰納バイアス（CNN）
+          | Code: ax.semilogx(data_sizes, strong_bias, 'b-', linewidth=2, label='強い帰納バイアス（CNN）')
+
+  Cell  13 | JP: 弱い帰納バイアス（MLP）
+          | EN: (manual) 弱い帰納バイアス（MLP）
+          | Code: ax.semilogx(data_sizes, weak_bias, 'r-', linewidth=2, label='弱い帰納バイアス（MLP）')
+
+  Cell  13 | JP: 理論的最大性能
+          | EN: (manual) 理論的最大性能
+          | Code: ax.axhline(y=0.95, color='green', linestyle='--', alpha=0.5, label='理論的最大性能')
+
+  Cell  13 | JP: CNNが有利な領域
+          | EN: (manual) CNNが有利な領域
+          | Code: label='CNNが有利な領域')
+
+  Cell  13 | JP: MLPが有利な領域
+          | EN: (manual) MLPが有利な領域
+          | Code: label='MLPが有利な領域')
+
+  Cell  13 | JP: データ量
+          | EN: (manual) データ量
+          | Code: ax.set_xlabel('データ量', fontsize=12)
+
+  Cell  13 | JP: テスト精度
+          | EN: TestAccuracy
+          | Code: ax.set_ylabel('テスト精度', fontsize=12)
+
+  Cell  13 | JP: データ量 vs 汎化性能
+          | EN: (manual) データ量 vs 汎化性能
+          | Code: ax.set_title('データ量 vs 汎化性能', fontsize=14, fontweight='bold')
+
+  Cell  13 | JP: バイアス²
+          | EN: (manual) バイアス²
+          | Code: ax.plot(complexity, bias_squared, 'b-', linewidth=2, label='バイアス²')
+
+  Cell  13 | JP: バリアンス
+          | EN: (manual) バリアンス
+          | Code: ax.plot(complexity, variance, 'r-', linewidth=2, label='バリアンス')
+
+  Cell  13 | JP: 総誤差
+          | EN: (manual) 総誤差
+          | Code: ax.plot(complexity, total_error, 'k-', linewidth=2, label='総誤差')
+
+  Cell  13 | JP: 最適な複雑さ
+          | EN: (manual) 最適な複雑さ
+          | Code: c='green', s=100, zorder=5, label='最適な複雑さ')
+
+  Cell  13 | JP: モデルの複雑さ（帰納バイアスの弱さ）
+          | EN: (manual) モデルの複雑さ（帰納バイアスの弱さ）
+          | Code: ax.set_xlabel('モデルの複雑さ（帰納バイアスの弱さ）', fontsize=12)
+
+  Cell  13 | JP: 誤差
+          | EN: (manual) 誤差
+          | Code: ax.set_ylabel('誤差', fontsize=12)
+
+  Cell  13 | JP: バイアス-バリアンストレードオフ
+          | EN: (manual) バイアス-バリアンストレードオフ
+          | Code: ax.set_title('バイアス-バリアンストレードオフ', fontsize=14, fontweight='bold')
+
+  Cell  16 | JP: 帰納\nバイアス
+          | EN: (manual) 帰納\nバイアス
+          | Code: ax.text(0.5, 0.5, '帰納\nバイアス', fontsize=14, ha='center', va='center',
+
+  Cell  16 | JP: 画像の性質
+          | EN: (manual) 画像の性質
+          | Code: ax.text(0.5, 0.81, '画像の性質', fontsize=12, ha='center', fontweight='bold')
+
+  Cell  16 | JP: 局所相関・定常性・構成性
+          | EN: (manual) 局所相関・定常性・構成性
+          | Code: ax.text(0.5, 0.77, '局所相関・定常性・構成性', fontsize=10, ha='center')
+
+  Cell  16 | JP: 汎化性能
+          | EN: (manual) 汎化性能
+          | Code: ax.text(0.5, 0.21, '汎化性能', fontsize=12, ha='center', fontweight='bold')
+
+  Cell  16 | JP: 少ないデータで高精度
+          | EN: (manual) 少ないデータで高精度
+          | Code: ax.text(0.5, 0.17, '少ないデータで高精度', fontsize=10, ha='center')
+
+  Cell  16 | JP: CNNの構造
+          | EN: (manual) CNNの構造
+          | Code: ax.text(0.15, 0.55, 'CNNの構造', fontsize=11, ha='center', fontweight='bold')
+
+  Cell  16 | JP: ・局所カーネル
+          | EN: (manual) ・局所カーネル
+          | Code: ax.text(0.15, 0.47, '・局所カーネル', fontsize=9, ha='center')
+
+  Cell  16 | JP: ・重み共有
+          | EN: (manual) ・重み共有
+          | Code: ax.text(0.15, 0.43, '・重み共有', fontsize=9, ha='center')
+
+  Cell  16 | JP: パラメータ効率
+          | EN: (manual) パラメータ効率
+          | Code: ax.text(0.85, 0.55, 'パラメータ効率', fontsize=11, ha='center', fontweight='bold')
+
+  Cell  16 | JP: MLP比で
+          | EN: (manual) MLP比で
+          | Code: ax.text(0.85, 0.47, 'MLP比で', fontsize=9, ha='center')
+
+  Cell  16 | JP: 数千倍削減
+          | EN: (manual) 数千倍削減
+          | Code: ax.text(0.85, 0.43, '数千倍削減', fontsize=9, ha='center')
+
+  Cell  16 | JP: 帰納バイアス：画像の性質とCNN設計の橋渡し
+          | EN: (manual) 帰納バイアス：画像の性質とCNN設計の橋渡し
+          | Code: ax.set_title('帰納バイアス：画像の性質とCNN設計の橋渡し', fontsize=16, fontweight='bold')
+
+==============================================================================================================
+ 91_weight_sharing_v1.ipynb  (37 instances)
+==============================================================================================================
+  Cell   3 | JP: 入力 (4×4)
+          | EN: (manual) 入力 (4×4)
+          | Code: ax.text(0.24, 0.85, '入力 (4×4)', fontsize=11, ha='center')
+
+  Cell   3 | JP: 出力 (4×4)
+          | EN: Output (4×4)
+          | Code: ax.text(0.94, 0.85, '出力 (4×4)', fontsize=11, ha='center')
+
+  Cell   3 | JP: 全結合層\n各接続に異なる重み\n（重み共有なし）
+          | EN: (manual) 全結合層\n各接続に異なる重み\n（重み共有なし）
+          | Code: ax.text(0.5, 0.15, '全結合層\n各接続に異なる重み\n（重み共有なし）', fontsize=12,
+
+  Cell   3 | JP: パラメータ数: 16 × 16 = 256
+          | EN: (manual) パラメータ数: 16 × 16 = 256
+          | Code: ax.text(0.5, 0.02, f'パラメータ数: 16 × 16 = 256', fontsize=11, ha='center')
+
+  Cell   3 | JP: 全結合層：各位置ごとに異なる重み
+          | EN: (manual) 全結合層：各位置ごとに異なる重み
+          | Code: ax.set_title('全結合層：各位置ごとに異なる重み', fontsize=14, fontweight='bold')
+
+  Cell   3 | JP: 同じカーネル\n(3×3)
+          | EN: (manual) 同じカーネル\n(3×3)
+          | Code: ax.text(kernel_x + 0.12, kernel_y + 0.12, '同じカーネル\n(3×3)', fontsize=10, ha='center')
+
+  Cell   3 | JP: 出力 (2×2)
+          | EN: Output (2×2)
+          | Code: ax.text(0.92, 0.8, '出力 (2×2)', fontsize=11, ha='center')
+
+  Cell   3 | JP: 畳み込み層\n同じカーネルをスライド\n（重み共有）
+          | EN: (manual) 畳み込み層\n同じカーネルをスライド\n（重み共有）
+          | Code: ax.text(0.5, 0.15, '畳み込み層\n同じカーネルをスライド\n（重み共有）', fontsize=12,
+
+  Cell   3 | JP: パラメータ数: 3 × 3 = 9
+          | EN: (manual) パラメータ数: 3 × 3 = 9
+          | Code: ax.text(0.5, 0.02, f'パラメータ数: 3 × 3 = 9', fontsize=11, ha='center')
+
+  Cell   3 | JP: 畳み込み層：同じ重みを全位置で共有
+          | EN: (manual) 畳み込み層：同じ重みを全位置で共有
+          | Code: ax.set_title('畳み込み層：同じ重みを全位置で共有', fontsize=14, fontweight='bold')
+
+  Cell   3 | JP: 重み共有：CNNの核心的アイデア
+          | EN: (manual) 重み共有：CNNの核心的アイデア
+          | Code: plt.suptitle('重み共有：CNNの核心的アイデア', fontsize=16, fontweight='bold')
+
+  Cell   7 | JP: 全結合層
+          | EN: (manual) 全結合層
+          | Code: bars1 = ax.bar(x - width/2, fc_params, width, label='全結合層', color='coral', alpha=0.7)
+
+  Cell   7 | JP: 畳み込み層
+          | EN: ConvolutionLayer
+          | Code: bars2 = ax.bar(x + width/2, conv_params, width, label='畳み込み層', color='steelblue', alpha=0.7)
+
+  Cell   7 | JP: パラメータ数（対数スケール）
+          | EN: (manual) パラメータ数（対数スケール）
+          | Code: ax.set_ylabel('パラメータ数（対数スケール）', fontsize=12)
+
+  Cell   7 | JP: パラメータ数の比較
+          | EN: (manual) パラメータ数の比較
+          | Code: ax.set_title('パラメータ数の比較', fontsize=14, fontweight='bold')
+
+  Cell   7 | JP: {ratio:,.0f}倍削減
+          | EN: (manual) {ratio:,.0f}倍削減
+          | Code: ax.annotate(f'{ratio:,.0f}倍削減',
+
+  Cell  11 | JP: 畳み込み層：1つのカーネルを全位置で共有\n（パラメータ数 = 9）
+          | EN: (manual) 畳み込み層：1つのカーネルを全位置で共有\n（パラメータ数 = 9）
+          | Code: ax.set_title('畳み込み層：1つのカーネルを全位置で共有\n（パラメータ数 = 9）',
+
+  Cell  11 | JP: 位置({row},{col})の重み
+          | EN: (manual) 位置({row},{col})の重み
+          | Code: ax_sub.set_title(f'位置({row},{col})の重み', fontsize=9)
+
+  Cell  11 | JP: 全結合層：各位置で異なる重み\n（パラメータ数 = 位置数 × 9）
+          | EN: (manual) 全結合層：各位置で異なる重み\n（パラメータ数 = 位置数 × 9）
+          | Code: ax.set_title('全結合層：各位置で異なる重み\n（パラメータ数 = 位置数 × 9）',
+
+  Cell  11 | JP: 重み共有 vs 非共有
+          | EN: (manual) 重み共有 vs 非共有
+          | Code: plt.suptitle('重み共有 vs 非共有', fontsize=16, fontweight='bold')
+
+  Cell  13 | JP: 入力1\n（パターンが左上）
+          | EN: (manual) 入力1\n（パターンが左上）
+          | Code: axes[0, 0].set_title('入力1\n（パターンが左上）', fontsize=12)
+
+  Cell  13 | JP: カーネル\n（Sobel横）
+          | EN: (manual) カーネル\n（Sobel横）
+          | Code: axes[0, 1].set_title('カーネル\n（Sobel横）', fontsize=12)
+
+  Cell  13 | JP: 出力1\n（特徴が左上）
+          | EN: (manual) 出力1\n（特徴が左上）
+          | Code: axes[0, 2].set_title('出力1\n（特徴が左上）', fontsize=12)
+
+  Cell  13 | JP: 最大応答位置:\n({max_pos1[0]}, {max_pos1[1]})
+          | EN: (manual) 最大応答位置:\n({max_pos1[0]}, {max_pos1[1]})
+          | Code: axes[0, 3].text(0.5, 0.5, f'最大応答位置:\n({max_pos1[0]}, {max_pos1[1]})',
+
+  Cell  13 | JP: 入力2\n（+3,+3シフト）
+          | EN: (manual) 入力2\n（+3,+3シフト）
+          | Code: axes[1, 0].set_title('入力2\n（+3,+3シフト）', fontsize=12)
+
+  Cell  13 | JP: 同じカーネル\n（重み共有）
+          | EN: (manual) 同じカーネル\n（重み共有）
+          | Code: axes[1, 1].set_title('同じカーネル\n（重み共有）', fontsize=12)
+
+  Cell  13 | JP: 出力2\n（特徴も+3,+3シフト）
+          | EN: (manual) 出力2\n（特徴も+3,+3シフト）
+          | Code: axes[1, 2].set_title('出力2\n（特徴も+3,+3シフト）', fontsize=12)
+
+  Cell  13 | JP: 最大応答位置:\n({max_pos2[0]}, {max_pos2[1]})
+          | EN: (manual) 最大応答位置:\n({max_pos2[0]}, {max_pos2[1]})
+          | Code: axes[1, 3].text(0.5, 0.6, f'最大応答位置:\n({max_pos2[0]}, {max_pos2[1]})',
+
+  Cell  13 | JP: シフト量:\n({max_pos2[0]-max_pos1[0]}, {max_pos2[1]-max_pos1[1]})
+          | EN: (manual) シフト量:\n({max_pos2[0]-max_pos1[0]}, {max_pos2[1]-max_pos1[1]})
+          | Code: axes[1, 3].text(0.5, 0.3, f'シフト量:\n({max_pos2[0]-max_pos1[0]}, {max_pos2[1]-max_pos1[1]})',
+
+  Cell  13 | JP: 平行移動等変性：入力のシフト → 出力も同じだけシフト
+          | EN: (manual) 平行移動等変性：入力のシフト → 出力も同じだけシフト
+          | Code: plt.suptitle('平行移動等変性：入力のシフト → 出力も同じだけシフト',
+
+  Cell  19 | JP: 重み共有\n(Weight Sharing)
+          | EN: Weight Sharing\n(Weight Sharing)
+          | Code: ax.text(0.5, 0.5, '重み共有\n(Weight Sharing)', fontsize=16, ha='center', va='center',
+
+  Cell  19 | JP: 定義: 同じカーネルを全位置で使用
+          | EN: (manual) 定義: 同じカーネルを全位置で使用
+          | Code: ax.text(0.5, 0.85, '定義: 同じカーネルを全位置で使用', fontsize=12,
+
+  Cell  19 | JP: パラメータ効率\n数千〜数十億倍削減
+          | EN: (manual) パラメータ効率\n数千〜数十億倍削減
+          | Code: ax.text(0.15, 0.5, 'パラメータ効率\n数千〜数十億倍削減', fontsize=11,
+
+  Cell  19 | JP: 平行移動等変性\n位置不変の検出
+          | EN: (manual) 平行移動等変性\n位置不変の検出
+          | Code: ax.text(0.85, 0.5, '平行移動等変性\n位置不変の検出', fontsize=11,
+
+  Cell  19 | JP: 画像認識への適合性\n「同じパターンは同じ方法で処理」
+          | EN: (manual) 画像認識への適合性\n「同じパターンは同じ方法で処理」
+          | Code: ax.text(0.5, 0.15, '画像認識への適合性\n「同じパターンは同じ方法で処理」', fontsize=12,
+
+  Cell  19 | JP: 重み共有：CNNのパラメータ効率と等変性の源
+          | EN: (manual) 重み共有：CNNのパラメータ効率と等変性の源
+          | Code: ax.set_title('重み共有：CNNのパラメータ効率と等変性の源', fontsize=16, fontweight='bold')
+
+==============================================================================================================
+ 92_translation_equivariance_v1.ipynb  (38 instances)
+==============================================================================================================
+  Cell   3 | JP: 入力 x
+          | EN: (manual) 入力 x
+          | Code: axes[0, 0].set_title('入力 x', fontsize=12)
+
+  Cell   3 | JP: T(x)\n(+2, +2シフト)
+          | EN: (manual) T(x)\n(+2, +2シフト)
+          | Code: axes[0, 1].set_title('T(x)\n(+2, +2シフト)', fontsize=12)
+
+  Cell   3 | JP: f(x)\n畳み込み結果
+          | EN: f(x)\nConvolutionResults
+          | Code: axes[0, 2].set_title('f(x)\n畳み込み結果', fontsize=12)
+
+  Cell   3 | JP: f(T(x)) = T(f(x))\n同じだけシフト
+          | EN: (manual) f(T(x)) = T(f(x))\n同じだけシフト
+          | Code: axes[0, 3].set_title('f(T(x)) = T(f(x))\n同じだけシフト', fontsize=12)
+
+  Cell   3 | JP: 等変性：f(T(x)) = T(f(x))
+          | EN: (manual) 等変性：f(T(x)) = T(f(x))
+          | Code: axes[0, 0].text(4, -1.5, '等変性：f(T(x)) = T(f(x))', fontsize=14,
+
+  Cell   3 | JP: 不変性：f(T(x)) = f(x)
+          | EN: (manual) 不変性：f(T(x)) = f(x)
+          | Code: axes[1, 0].text(4, -1.5, '不変性：f(T(x)) = f(x)', fontsize=14,
+
+  Cell   3 | JP: 等変性（Equivariance） vs 不変性（Invariance）
+          | EN: (manual) 等変性（Equivariance） vs 不変性（Invariance）
+          | Code: plt.suptitle('等変性（Equivariance） vs 不変性（Invariance）',
+
+  Cell   7 | JP: 入力 x
+          | EN: (manual) 入力 x
+          | Code: axes[0, 0].set_title('入力 x', fontsize=12)
+
+  Cell   7 | JP: T(x) (シフト={shift})
+          | EN: (manual) T(x) (シフト={shift})
+          | Code: axes[0, 1].set_title(f'T(x) (シフト={shift})', fontsize=12)
+
+  Cell   7 | JP: カーネル w
+          | EN: Kernel w
+          | Code: axes[0, 2].set_title('カーネル w', fontsize=12)
+
+  Cell   7 | JP: 平行移動等変性の検証: f(T(x)) ≈ T(f(x))\n最大差: {diff:.2e}
+          | EN: (manual) 平行移動等変性の検証: f(T(x)) ≈ T(f(x))\n最大差: {diff:.2e}
+          | Code: plt.suptitle(f'平行移動等変性の検証: f(T(x)) ≈ T(f(x))\n最大差: {diff:.2e}',
+
+  Cell   9 | JP: ピーク位置: {title}
+          | EN: (manual) ピーク位置: {title}
+          | Code: axes[0, idx].set_title(f'ピーク位置: {title}', fontsize=12)
+
+  Cell   9 | JP: MaxPool結果
+          | EN: MaxPoolResults
+          | Code: axes[1, idx].set_title(f'MaxPool結果', fontsize=12)
+
+  Cell   9 | JP: 入力
+          | EN: (manual) 入力
+          | Code: axes[0, 0].text(-0.5, 2, '入力', fontsize=12, ha='right', va='center', fontweight='bold')
+
+  Cell   9 | JP: Max Poolingによる局所的不変性\n左上2×2領域内のどこにピークがあっても、出力は同じ
+          | EN: (manual) Max Poolingによる局所的不変性\n左上2×2領域内のどこにピークがあっても、出力は同じ
+          | Code: plt.suptitle('Max Poolingによる局所的不変性\n左上2×2領域内のどこにピークがあっても、出力は同じ',
+
+  Cell  10 | JP: シフト: ({dy}, {dx})
+          | EN: (manual) シフト: ({dy}, {dx})
+          | Code: ax.set_title(f'シフト: ({dy}, {dx})', fontsize=12)
+
+  Cell  10 | JP: Global Average Pooling：完全な平行移動不変性\n位置に関係なく同じ出力
+          | EN: (manual) Global Average Pooling：完全な平行移動不変性\n位置に関係なく同じ出力
+          | Code: plt.suptitle('Global Average Pooling：完全な平行移動不変性\n位置に関係なく同じ出力',
+
+  Cell  12 | JP: 畳み込み（等変）
+          | EN: (manual) 畳み込み（等変）
+          | Code: Patch(facecolor='lightblue', edgecolor='gray', label='畳み込み（等変）'),
+
+  Cell  12 | JP: プーリング（局所不変）
+          | EN: (manual) プーリング（局所不変）
+          | Code: Patch(facecolor='lightyellow', edgecolor='gray', label='プーリング（局所不変）'),
+
+  Cell  12 | JP: グローバル不変
+          | EN: (manual) グローバル不変
+          | Code: Patch(facecolor='lightgreen', edgecolor='gray', label='グローバル不変'),
+
+  Cell  12 | JP: 等変性
+          | EN: (manual) 等変性
+          | Code: ax_gradient.set_xticklabels(['等変性', '', '不変性'])
+
+  Cell  12 | JP: 不変性
+          | EN: (manual) 不変性
+          | Code: ax_gradient.set_xticklabels(['等変性', '', '不変性'])
+
+  Cell  12 | JP: CNNの層を通じた等変性→不変性の遷移
+          | EN: (manual) CNNの層を通じた等変性→不変性の遷移
+          | Code: ax.set_title('CNNの層を通じた等変性→不変性の遷移', fontsize=16, fontweight='bold')
+
+  Cell  15 | JP: 元画像
+          | EN: (manual) 元画像
+          | Code: axes[0, 0].set_title('元画像', fontsize=11)
+
+  Cell  15 | JP: 平行移動 (+5, +5)
+          | EN: (manual) 平行移動 (+5, +5)
+          | Code: axes[0, 1].set_title('平行移動 (+5, +5)', fontsize=11)
+
+  Cell  15 | JP: Conv(元)
+          | EN: (manual) Conv(元)
+          | Code: axes[0, 2].set_title('Conv(元)', fontsize=11)
+
+  Cell  15 | JP: Conv(平行移動)\n→ 等変 ✓
+          | EN: (manual) Conv(平行移動)\n→ 等変 ✓
+          | Code: axes[0, 3].set_title('Conv(平行移動)\n→ 等変 ✓', fontsize=11)
+
+  Cell  15 | JP: 回転 (45°)
+          | EN: (manual) 回転 (45°)
+          | Code: axes[1, 1].set_title('回転 (45°)', fontsize=11)
+
+  Cell  15 | JP: Conv(回転)
+          | EN: (manual) Conv(回転)
+          | Code: axes[1, 2].set_title('Conv(回転)', fontsize=11)
+
+  Cell  15 | JP: 回転(Conv(元))\n→ 非等変 ✗
+          | EN: (manual) 回転(Conv(元))\n→ 非等変 ✗
+          | Code: axes[1, 3].set_title('回転(Conv(元))\n→ 非等変 ✗', fontsize=11)
+
+  Cell  15 | JP: スケール (1.5×)
+          | EN: (manual) スケール (1.5×)
+          | Code: axes[2, 1].set_title('スケール (1.5×)', fontsize=11)
+
+  Cell  15 | JP: Conv(スケール)
+          | EN: (manual) Conv(スケール)
+          | Code: axes[2, 2].set_title('Conv(スケール)', fontsize=11)
+
+  Cell  15 | JP: スケールにも\n非等変 ✗
+          | EN: (manual) スケールにも\n非等変 ✗
+          | Code: axes[2, 3].text(0.5, 0.5, 'スケールにも\n非等変 ✗', fontsize=14,
+
+  Cell  15 | JP: CNNの変換に対する性質
+          | EN: (manual) CNNの変換に対する性質
+          | Code: plt.suptitle('CNNの変換に対する性質', fontsize=14, fontweight='bold')
+
+==============================================================================================================
+ 93_cnn_vs_mlp_v1.ipynb  (17 instances)
+==============================================================================================================
+  Cell   3 | JP: 入力\n(flatten)
+          | EN: (manual) 入力\n(flatten)
+          | Code: ax.text(0.2, 0.97, '入力\n(flatten)', ha='center', fontsize=10)
+
+  Cell   3 | JP: 隠れ層
+          | EN: (manual) 隠れ層
+          | Code: ax.text(0.5, 0.92, '隠れ層', ha='center', fontsize=10)
+
+  Cell   3 | JP: 出力
+          | EN: Output
+          | Code: ax.text(0.8, 0.92, '出力', ha='center', fontsize=10)
+
+  Cell   3 | JP: 全結合：すべてのニューロンが接続\n→ 空間構造を無視
+          | EN: (manual) 全結合：すべてのニューロンが接続\n→ 空間構造を無視
+          | Code: ax.text(0.5, 0.1, '全結合：すべてのニューロンが接続\n→ 空間構造を無視',
+
+  Cell   3 | JP: MLP（多層パーセプトロン）
+          | EN: (manual) MLP（多層パーセプトロン）
+          | Code: ax.set_title('MLP（多層パーセプトロン）', fontsize=14, fontweight='bold')
+
+  Cell   3 | JP: 入力\n(2D)
+          | EN: (manual) 入力\n(2D)
+          | Code: ax.text(0.19, 0.82, '入力\n(2D)', ha='center', fontsize=10)
+
+  Cell   3 | JP: カーネル\n(共有)
+          | EN: (manual) カーネル\n(共有)
+          | Code: ax.text(0.42, 0.72, 'カーネル\n(共有)', ha='center', fontsize=10)
+
+  Cell   3 | JP: 特徴マップ\n(2D)
+          | EN: Feature Map\n(2D)
+          | Code: ax.text(0.71, 0.82, '特徴マップ\n(2D)', ha='center', fontsize=10)
+
+  Cell   3 | JP: 局所接続 + 重み共有\n→ 空間構造を活用
+          | EN: (manual) 局所接続 + 重み共有\n→ 空間構造を活用
+          | Code: ax.text(0.5, 0.1, '局所接続 + 重み共有\n→ 空間構造を活用',
+
+  Cell   3 | JP: CNN（畳み込みニューラルネットワーク）
+          | EN: (manual) CNN（畳み込みニューラルネットワーク）
+          | Code: ax.set_title('CNN（畳み込みニューラルネットワーク）', fontsize=14, fontweight='bold')
+
+  Cell   3 | JP: MLP vs CNN の構造比較
+          | EN: (manual) MLP vs CNN の構造比較
+          | Code: plt.suptitle('MLP vs CNN の構造比較', fontsize=16, fontweight='bold')
+
+  Cell  10 | JP: 訓練損失
+          | EN: TrainingLoss
+          | Code: axes[0].set_title('訓練損失')
+
+  Cell  10 | JP: テスト精度
+          | EN: TestAccuracy
+          | Code: axes[1].set_title('テスト精度')
+
+  Cell  10 | JP: MLP vs CNN の学習曲線
+          | EN: (manual) MLP vs CNN の学習曲線
+          | Code: plt.suptitle('MLP vs CNN の学習曲線', fontsize=14, fontweight='bold')
+
+  Cell  12 | JP: 水平シフト量（ピクセル）
+          | EN: (manual) 水平シフト量（ピクセル）
+          | Code: plt.xlabel('水平シフト量（ピクセル）', fontsize=12)
+
+  Cell  12 | JP: 精度 (%)
+          | EN: Accuracy (%)
+          | Code: plt.ylabel('精度 (%)', fontsize=12)
+
+  Cell  12 | JP: 位置シフトに対する頑健性\nCNNは重み共有により位置変化に強い
+          | EN: (manual) 位置シフトに対する頑健性\nCNNは重み共有により位置変化に強い
+          | Code: plt.title('位置シフトに対する頑健性\nCNNは重み共有により位置変化に強い', fontsize=14, fontweight='bold')
+
+==============================================================================================================
+ 94_when_cnn_fails_v1.ipynb  (31 instances)
+==============================================================================================================
+  Cell   3 | JP: 回転に非等変\n同じ「縦棒」でも
+          | EN: (manual) 回転に非等変\n同じ「縦棒」でも
+          | Code: ax.set_title('回転に非等変\n同じ「縦棒」でも', fontsize=12)
+
+  Cell   3 | JP: 45°回転すると\n異なる特徴として検出
+          | EN: (manual) 45°回転すると\n異なる特徴として検出
+          | Code: ax.set_title('45°回転すると\n異なる特徴として検出', fontsize=12)
+
+  Cell   3 | JP: 回転等変でない\n\nデータ拡張で\n対処が一般的
+          | EN: (manual) 回転等変でない\n\nデータ拡張で\n対処が一般的
+          | Code: ax.text(0.5, 0.5, '回転等変でない\n\nデータ拡張で\n対処が一般的',
+
+  Cell   3 | JP: 長距離依存関係\nこの2つの関係は？
+          | EN: (manual) 長距離依存関係\nこの2つの関係は？
+          | Code: ax.set_title('長距離依存関係\nこの2つの関係は？', fontsize=12)
+
+  Cell   3 | JP: 受容野の限界\n\n初期層では\n遠い点を同時に\n見れない
+          | EN: (manual) 受容野の限界\n\n初期層では\n遠い点を同時に\n見れない
+          | Code: ax.text(0.5, 0.6, '受容野の限界\n\n初期層では\n遠い点を同時に\n見れない',
+
+  Cell   3 | JP: 解決策:\n・深い層を使う\n・Attention機構
+          | EN: (manual) 解決策:\n・深い層を使う\n・Attention機構
+          | Code: ax.text(0.5, 0.2, '解決策:\n・深い層を使う\n・Attention機構',
+
+  Cell   3 | JP: テクスチャバイアス\nCNNは形状より\nテクスチャを重視しがち
+          | EN: (manual) テクスチャバイアス\nCNNは形状より\nテクスチャを重視しがち
+          | Code: ax.set_title('テクスチャバイアス\nCNNは形状より\nテクスチャを重視しがち', fontsize=12)
+
+  Cell   3 | JP: CNNの帰納バイアスの限界
+          | EN: (manual) CNNの帰納バイアスの限界
+          | Code: plt.suptitle('CNNの帰納バイアスの限界', fontsize=16, fontweight='bold')
+
+  Cell   5 | JP: {angle}°回転
+          | EN: (manual) {angle}°回転
+          | Code: axes[0, idx].set_title(f'{angle}°回転', fontsize=12)
+
+  Cell   5 | JP: 縦エッジ応答
+          | EN: (manual) 縦エッジ応答
+          | Code: axes[1, idx].set_title(f'縦エッジ応答', fontsize=10)
+
+  Cell   5 | JP: 入力
+          | EN: (manual) 入力
+          | Code: axes[0, 0].set_ylabel('入力', fontsize=12)
+
+  Cell   5 | JP: フィルタ応答
+          | EN: (manual) フィルタ応答
+          | Code: axes[1, 0].set_ylabel('フィルタ応答', fontsize=12)
+
+  Cell   5 | JP: 回転に対するCNNの問題\n同じカーネルでは回転後のパターンを同様に検出できない
+          | EN: (manual) 回転に対するCNNの問題\n同じカーネルでは回転後のパターンを同様に検出できない
+          | Code: plt.suptitle('回転に対するCNNの問題\n同じカーネルでは回転後のパターンを同様に検出できない',
+
+  Cell   8 | JP: 問題: 遠く離れた点の関係\n距離 ≈ 25ピクセル
+          | EN: (manual) 問題: 遠く離れた点の関係\n距離 ≈ 25ピクセル
+          | Code: ax.set_title('問題: 遠く離れた点の関係\n距離 ≈ 25ピクセル', fontsize=12)
+
+  Cell   8 | JP: 3×3カーネル
+          | EN: 3×3Kernel
+          | Code: ax.plot(layers, rf_3x3, 'b-o', label='3×3カーネル')
+
+  Cell   8 | JP: 5×5カーネル
+          | EN: 5×5Kernel
+          | Code: ax.plot(layers, rf_5x5, 'r-s', label='5×5カーネル')
+
+  Cell   8 | JP: 必要なRF=25
+          | EN: (manual) 必要なRF=25
+          | Code: ax.axhline(y=25, color='green', linestyle='--', label='必要なRF=25')
+
+  Cell   8 | JP: 層数
+          | EN: (manual) 層数
+          | Code: ax.set_xlabel('層数')
+
+  Cell   8 | JP: 受容野サイズ
+          | EN: (manual) 受容野サイズ
+          | Code: ax.set_ylabel('受容野サイズ')
+
+  Cell   8 | JP: 受容野の成長\n25ピクセルに達するまで
+          | EN: (manual) 受容野の成長\n25ピクセルに達するまで
+          | Code: ax.set_title('受容野の成長\n25ピクセルに達するまで', fontsize=12)
+
+  Cell   8 | JP: 解決策
+          | EN: (manual) 解決策
+          | Code: ax.set_title('解決策', fontsize=12)
+
+  Cell   8 | JP: 長距離依存関係の問題
+          | EN: (manual) 長距離依存関係の問題
+          | Code: plt.suptitle('長距離依存関係の問題', fontsize=14, fontweight='bold')
+
+  Cell   9 | JP: 通常の3×3畳み込み\nRF = 3
+          | EN: (manual) 通常の3×3畳み込み\nRF = 3
+          | Code: ax.set_title('通常の3×3畳み込み\nRF = 3', fontsize=12)
+
+  Cell   9 | JP: Dilated Convolution: パラメータを増やさずに受容野を拡大
+          | EN: (manual) Dilated Convolution: パラメータを増やさずに受容野を拡大
+          | Code: plt.suptitle('Dilated Convolution: パラメータを増やさずに受容野を拡大',
+
+  Cell  11 | JP: 猫（形状）+ 猫テクスチャ\n→ 猫として認識
+          | EN: (manual) 猫（形状）+ 猫テクスチャ\n→ 猫として認識
+          | Code: axes[0, 0].set_title('猫（形状）+ 猫テクスチャ\n→ 猫として認識', fontsize=11)
+
+  Cell  11 | JP: 象（形状）+ 象テクスチャ\n→ 象として認識
+          | EN: (manual) 象（形状）+ 象テクスチャ\n→ 象として認識
+          | Code: axes[0, 1].set_title('象（形状）+ 象テクスチャ\n→ 象として認識', fontsize=11)
+
+  Cell  11 | JP: 猫（形状）+ 象テクスチャ\n人間: 猫 / CNN: 象?
+          | EN: (manual) 猫（形状）+ 象テクスチャ\n人間: 猫 / CNN: 象?
+          | Code: axes[1, 0].set_title('猫（形状）+ 象テクスチャ\n人間: 猫 / CNN: 象?', fontsize=11)
+
+  Cell  11 | JP: 象（形状）+ 猫テクスチャ\n人間: 象 / CNN: 猫?
+          | EN: (manual) 象（形状）+ 猫テクスチャ\n人間: 象 / CNN: 猫?
+          | Code: axes[1, 1].set_title('象（形状）+ 猫テクスチャ\n人間: 象 / CNN: 猫?', fontsize=11)
+
+  Cell  11 | JP: テクスチャバイアス\n\nCNNは局所的な\nテクスチャパターンを\n重視しがち
+          | EN: (manual) テクスチャバイアス\n\nCNNは局所的な\nテクスチャパターンを\n重視しがち
+          | Code: axes[0, 2].text(0.5, 0.5, 'テクスチャバイアス\n\nCNNは局所的な\nテクスチャパターンを\n重視しがち',
+
+  Cell  11 | JP: 人間は形状を重視\nCNNはテクスチャを重視\n\n解決策:\n・Shape-biased訓練\n・データ拡張
+          | EN: (manual) 人間は形状を重視\nCNNはテクスチャを重視\n\n解決策:\n・Shape-biased訓練\n・データ拡張
+          | Code: axes[1, 2].text(0.5, 0.5, '人間は形状を重視\nCNNはテクスチャを重視\n\n解決策:\n・Shape-biased訓練\n・データ拡張',
+
+  Cell  11 | JP: テクスチャバイアス：CNNと人間の認識の違い
+          | EN: (manual) テクスチャバイアス：CNNと人間の認識の違い
+          | Code: plt.suptitle('テクスチャバイアス：CNNと人間の認識の違い', fontsize=14, fontweight='bold')
+
+==============================================================================================================
+ 95_beyond_cnn_v1.ipynb  (32 instances)
+==============================================================================================================
+  Cell   3 | JP: CNN系
+          | EN: (manual) CNN系
+          | Code: Patch(facecolor='lightblue', label='CNN系'),
+
+  Cell   3 | JP: MLP系
+          | EN: (manual) MLP系
+          | Code: Patch(facecolor='lightcoral', label='MLP系'),
+
+  Cell   3 | JP: 画像認識アーキテクチャの進化
+          | EN: (manual) 画像認識アーキテクチャの進化
+          | Code: ax.set_title('画像認識アーキテクチャの進化', fontsize=16, fontweight='bold')
+
+  Cell   5 | JP: 1. 入力画像\n（パッチに分割）
+          | EN: (manual) 1. 入力画像\n（パッチに分割）
+          | Code: ax.set_title('1. 入力画像\n（パッチに分割）', fontsize=12)
+
+  Cell   5 | JP: パッチ内の値
+          | EN: (manual) パッチ内の値
+          | Code: ax.set_xlabel('パッチ内の値')
+
+  Cell   5 | JP: パッチ番号
+          | EN: (manual) パッチ番号
+          | Code: ax.set_ylabel('パッチ番号')
+
+  Cell   5 | JP: 2. パッチをフラット化\n（16パッチ → 16トークン）
+          | EN: (manual) 2. パッチをフラット化\n（16パッチ → 16トークン）
+          | Code: ax.set_title('2. パッチをフラット化\n（16パッチ → 16トークン）', fontsize=12)
+
+  Cell   5 | JP: Key パッチ
+          | EN: (manual) Key パッチ
+          | Code: ax.set_xlabel('Key パッチ')
+
+  Cell   5 | JP: Query パッチ
+          | EN: (manual) Query パッチ
+          | Code: ax.set_ylabel('Query パッチ')
+
+  Cell   5 | JP: 3. Self-Attention\n（全パッチ間の関係）
+          | EN: (manual) 3. Self-Attention\n（全パッチ間の関係）
+          | Code: ax.set_title('3. Self-Attention\n（全パッチ間の関係）', fontsize=12)
+
+  Cell   5 | JP: Self-Attentionの利点
+          | EN: (manual) Self-Attentionの利点
+          | Code: ax.text(0.5, 0.8, 'Self-Attentionの利点', fontsize=14,
+
+  Cell   5 | JP: Vision Transformer (ViT) の仕組み
+          | EN: (manual) Vision Transformer (ViT) の仕組み
+          | Code: plt.suptitle('Vision Transformer (ViT) の仕組み', fontsize=16, fontweight='bold')
+
+  Cell   7 | JP: CNN: 局所的な受容野\n（深い層で徐々に拡大）
+          | EN: (manual) CNN: 局所的な受容野\n（深い層で徐々に拡大）
+          | Code: ax.set_title('CNN: 局所的な受容野\n（深い層で徐々に拡大）', fontsize=12)
+
+  Cell   7 | JP: ViT: 大域的な受容野\n（最初の層から全体を見れる）
+          | EN: (manual) ViT: 大域的な受容野\n（最初の層から全体を見れる）
+          | Code: ax.set_title('ViT: 大域的な受容野\n（最初の層から全体を見れる）', fontsize=12)
+
+  Cell   7 | JP: 受容野の比較：CNN vs ViT
+          | EN: (manual) 受容野の比較：CNN vs ViT
+          | Code: plt.suptitle('受容野の比較：CNN vs ViT', fontsize=14, fontweight='bold')
+
+  Cell   9 | JP: 特徴次元
+          | EN: (manual) 特徴次元
+          | Code: ax.set_xlabel('特徴次元')
+
+  Cell   9 | JP: パッチ
+          | EN: (manual) パッチ
+          | Code: ax.set_ylabel('パッチ')
+
+  Cell   9 | JP: 入力: パッチ × 特徴 行列
+          | EN: (manual) 入力: パッチ × 特徴 行列
+          | Code: ax.set_title('入力: パッチ × 特徴 行列', fontsize=12)
+
+  Cell   9 | JP: 列方向（パッチ間）に\nMLPを適用
+          | EN: (manual) 列方向（パッチ間）に\nMLPを適用
+          | Code: ax.text(0.5, 0.65, '列方向（パッチ間）に\nMLPを適用', fontsize=12,
+
+  Cell   9 | JP: パッチ間の\n情報交換
+          | EN: (manual) パッチ間の\n情報交換
+          | Code: ax.text(0.35, 0.42, 'パッチ間の\n情報交換', fontsize=10, transform=ax.transAxes)
+
+  Cell   9 | JP: 特徴間の\n情報交換
+          | EN: (manual) 特徴間の\n情報交換
+          | Code: ax.text(0.6, 0.28, '特徴間の\n情報交換', fontsize=10, transform=ax.transAxes)
+
+  Cell   9 | JP: MLP-Mixer の2種類のMLP
+          | EN: (manual) MLP-Mixer の2種類のMLP
+          | Code: ax.set_title('MLP-Mixer の2種類のMLP', fontsize=12)
+
+  Cell   9 | JP: アーキテクチャ比較
+          | EN: (manual) アーキテクチャ比較
+          | Code: ax.set_title('アーキテクチャ比較', fontsize=12)
+
+  Cell   9 | JP: MLP-Mixer: 畳み込みもAttentionも使わない
+          | EN: (manual) MLP-Mixer: 畳み込みもAttentionも使わない
+          | Code: plt.suptitle('MLP-Mixer: 畳み込みもAttentionも使わない', fontsize=16, fontweight='bold')
+
+  Cell  11 | JP: 帰納バイアスの強さ
+          | EN: (manual) 帰納バイアスの強さ
+          | Code: ax.set_xlabel('帰納バイアスの強さ', fontsize=12)
+
+  Cell  11 | JP: アーキテクチャ別の帰納バイアス
+          | EN: (manual) アーキテクチャ別の帰納バイアス
+          | Code: ax.set_title('アーキテクチャ別の帰納バイアス', fontsize=14, fontweight='bold')
+
+  Cell  11 | JP: ← 弱い帰納バイアス\n（より多くのデータが必要）
+          | EN: (manual) ← 弱い帰納バイアス\n（より多くのデータが必要）
+          | Code: ax.text(0.25, -0.8, '← 弱い帰納バイアス\n（より多くのデータが必要）',
+
+  Cell  11 | JP: 強い帰納バイアス →\n（少ないデータで学習可能）
+          | EN: (manual) 強い帰納バイアス →\n（少ないデータで学習可能）
+          | Code: ax.text(0.75, -0.8, '強い帰納バイアス →\n（少ないデータで学習可能）',
+
+  Cell  12 | JP: CNNとViTが\n交差する領域
+          | EN: (manual) CNNとViTが\n交差する領域
+          | Code: ax.text(1e7, 0.3, 'CNNとViTが\n交差する領域', fontsize=10, ha='center')
+
+  Cell  12 | JP: 訓練データ数
+          | EN: (manual) 訓練データ数
+          | Code: ax.set_xlabel('訓練データ数', fontsize=12)
+
+  Cell  12 | JP: 性能
+          | EN: (manual) 性能
+          | Code: ax.set_ylabel('性能', fontsize=12)
+
+  Cell  12 | JP: データ量と性能の関係（概念図）
+          | EN: (manual) データ量と性能の関係（概念図）
+          | Code: ax.set_title('データ量と性能の関係（概念図）', fontsize=14, fontweight='bold')
+
+==============================================================================================================
+ 96_semantic_segmentation_intro_v1.ipynb  (22 instances)
+==============================================================================================================
+  Cell   3 | JP: 入力画像
+          | EN: Input Image
+          | Code: axes[0].set_title('入力画像', fontsize=14)
+
+  Cell   3 | JP: セグメンテーションマスク
+          | EN: (manual) セグメンテーションマスク
+          | Code: axes[1].set_title('セグメンテーションマスク', fontsize=14)
+
+  Cell   3 | JP: 空 (0)
+          | EN: (manual) 空 (0)
+          | Code: Patch(facecolor='skyblue', label='空 (0)'),
+
+  Cell   3 | JP: 草 (1)
+          | EN: (manual) 草 (1)
+          | Code: Patch(facecolor='lightgreen', label='草 (1)'),
+
+  Cell   3 | JP: 猫 (2)
+          | EN: (manual) 猫 (2)
+          | Code: Patch(facecolor='orange', label='猫 (2)'),
+
+  Cell   3 | JP: オーバーレイ表示
+          | EN: (manual) オーバーレイ表示
+          | Code: axes[2].set_title('オーバーレイ表示', fontsize=14)
+
+  Cell   3 | JP: セマンティックセグメンテーション：各ピクセルにクラスを割り当て
+          | EN: (manual) セマンティックセグメンテーション：各ピクセルにクラスを割り当て
+          | Code: plt.suptitle('セマンティックセグメンテーション：各ピクセルにクラスを割り当て',
+
+  Cell   5 | JP: 画像分類\n出力: クラスラベル
+          | EN: (manual) 画像分類\n出力: クラスラベル
+          | Code: axes[0, 0].set_title('画像分類\n出力: クラスラベル', fontsize=12)
+
+  Cell   5 | JP: クラス: "四角"
+          | EN: (manual) クラス: "四角"
+          | Code: axes[0, 0].text(32, 70, 'クラス: "四角"', ha='center', fontsize=11)
+
+  Cell   5 | JP: 物体検出\n出力: BBox + クラス
+          | EN: (manual) 物体検出\n出力: BBox + クラス
+          | Code: axes[0, 1].set_title('物体検出\n出力: BBox + クラス', fontsize=12)
+
+  Cell   5 | JP: セマンティックセグメンテーション\n出力: ピクセルごとのクラス
+          | EN: (manual) セマンティックセグメンテーション\n出力: ピクセルごとのクラス
+          | Code: axes[0, 2].set_title('セマンティックセグメンテーション\n出力: ピクセルごとのクラス', fontsize=12)
+
+  Cell   5 | JP: インスタンスセグメンテーション\n出力: 物体ごとに区別
+          | EN: (manual) インスタンスセグメンテーション\n出力: 物体ごとに区別
+          | Code: axes[1, 0].set_title('インスタンスセグメンテーション\n出力: 物体ごとに区別', fontsize=12)
+
+  Cell   5 | JP: タスク比較
+          | EN: (manual) タスク比較
+          | Code: axes[1, 1].set_title('タスク比較', fontsize=12)
+
+  Cell   5 | JP: セマンティックセグメンテーションは\n\n・ピクセル単位の分類\n・位置情報を完全に保持\n・Dense Prediction
+          | EN: (manual) セマンティックセグメンテーションは\n\n・ピクセル単位の分類\n・位置情報を完全に保持\n・Dense Prediction
+          | Code: axes[1, 2].text(0.5, 0.5, 'セマンティックセグメンテーションは\n\n・ピクセル単位の分類\n・位置情報を完全に保持\n・Dense Prediction',
+
+  Cell   5 | JP: コンピュータビジョンタスクの比較
+          | EN: (manual) コンピュータビジョンタスクの比較
+          | Code: plt.suptitle('コンピュータビジョンタスクの比較', fontsize=16, fontweight='bold')
+
+  Cell   8 | JP: 入力\n64×64
+          | EN: (manual) 入力\n64×64
+          | Code: axes[0].set_title('入力\n64×64', fontsize=12)
+
+  Cell   8 | JP: アップサンプル\n64×64（情報損失）
+          | EN: (manual) アップサンプル\n64×64（情報損失）
+          | Code: axes[3].set_title('アップサンプル\n64×64（情報損失）', fontsize=12)
+
+  Cell   8 | JP: 解像度の問題：ダウンサンプリングで詳細が失われる
+          | EN: (manual) 解像度の問題：ダウンサンプリングで詳細が失われる
+          | Code: plt.suptitle('解像度の問題：ダウンサンプリングで詳細が失われる',
+
+  Cell  10 | JP: エンコーダ\n（特徴抽出）
+          | EN: (manual) エンコーダ\n（特徴抽出）
+          | Code: ax.text(0.22, 0.85, 'エンコーダ\n（特徴抽出）', ha='center', fontsize=12, fontweight='bold')
+
+  Cell  10 | JP: デコーダ\n（アップサンプル）
+          | EN: (manual) デコーダ\n（アップサンプル）
+          | Code: ax.text(0.75, 0.85, 'デコーダ\n（アップサンプル）', ha='center', fontsize=12, fontweight='bold')
+
+  Cell  10 | JP: FCN: 全結合層を畳み込みに置き換え\n→ 任意の入力サイズに対応可能
+          | EN: (manual) FCN: 全結合層を畳み込みに置き換え\n→ 任意の入力サイズに対応可能
+          | Code: ax.text(0.5, 0.15, 'FCN: 全結合層を畳み込みに置き換え\n→ 任意の入力サイズに対応可能',
+
+  Cell  10 | JP: Encoder-Decoder アーキテクチャ
+          | EN: (manual) Encoder-Decoder アーキテクチャ
+          | Code: ax.set_title('Encoder-Decoder アーキテクチャ', fontsize=16, fontweight='bold')
+
+==============================================================================================================
+ 97_unet_architecture_v1.ipynb  (12 instances)
+==============================================================================================================
+  Cell   3 | JP: エンコーダ\n(Contracting Path)
+          | EN: (manual) エンコーダ\n(Contracting Path)
+          | Code: ax.text(0.25, 0.95, 'エンコーダ\n(Contracting Path)', ha='center', fontsize=12, fontweight='bold')
+
+  Cell   3 | JP: デコーダ\n(Expanding Path)
+          | EN: (manual) デコーダ\n(Expanding Path)
+          | Code: ax.text(0.75, 0.95, 'デコーダ\n(Expanding Path)', ha='center', fontsize=12, fontweight='bold')
+
+  Cell   3 | JP: ボトルネック
+          | EN: (manual) ボトルネック
+          | Code: ax.text(0.5, 0.08, 'ボトルネック', ha='center', fontsize=11, fontweight='bold')
+
+  Cell   3 | JP: エンコーダ
+          | EN: (manual) エンコーダ
+          | Code: Patch(facecolor=encoder_color, edgecolor='blue', label='エンコーダ'),
+
+  Cell   3 | JP: デコーダ
+          | EN: (manual) デコーダ
+          | Code: Patch(facecolor=decoder_color, edgecolor='green', label='デコーダ'),
+
+  Cell   3 | JP: オレンジの矢印 = スキップ接続（Skip Connection）
+          | EN: (manual) オレンジの矢印 = スキップ接続（Skip Connection）
+          | Code: ax.text(0.5, -0.02, 'オレンジの矢印 = スキップ接続（Skip Connection）',
+
+  Cell   3 | JP: U-Net アーキテクチャ
+          | EN: (manual) U-Net アーキテクチャ
+          | Code: ax.set_title('U-Net アーキテクチャ', fontsize=18, fontweight='bold')
+
+  Cell   7 | JP: 深い層の特徴\n（大域的だが境界がぼやける）
+          | EN: (manual) 深い層の特徴\n（大域的だが境界がぼやける）
+          | Code: axes[0].set_title('深い層の特徴\n（大域的だが境界がぼやける）', fontsize=12)
+
+  Cell   7 | JP: 浅い層の特徴（スキップ接続）\n（局所的だが境界が鮮明）
+          | EN: (manual) 浅い層の特徴（スキップ接続）\n（局所的だが境界が鮮明）
+          | Code: axes[1].set_title('浅い層の特徴（スキップ接続）\n（局所的だが境界が鮮明）', fontsize=12)
+
+  Cell   7 | JP: 組み合わせ\n（大域的コンテキスト + 詳細な境界）
+          | EN: (manual) 組み合わせ\n（大域的コンテキスト + 詳細な境界）
+          | Code: axes[2].set_title('組み合わせ\n（大域的コンテキスト + 詳細な境界）', fontsize=12)
+
+  Cell   7 | JP: スキップ接続の効果：詳細な境界情報の保持
+          | EN: (manual) スキップ接続の効果：詳細な境界情報の保持
+          | Code: plt.suptitle('スキップ接続の効果：詳細な境界情報の保持', fontsize=14, fontweight='bold')
+
+==============================================================================================================
+ 98_feature_pyramid_v1.ipynb  (7 instances)
+==============================================================================================================
+  Cell   3 | JP: 様々なサイズの物体
+          | EN: (manual) 様々なサイズの物体
+          | Code: ax.set_title('様々なサイズの物体', fontsize=12)
+
+  Cell   3 | JP: 単一スケール特徴の問題
+          | EN: (manual) 単一スケール特徴の問題
+          | Code: ax.text(0.5, 0.8, '単一スケール特徴の問題', fontsize=14, ha='center', fontweight='bold')
+
+  Cell   3 | JP: 浅い層: 小さい物体に適するが\n意味的情報が弱い
+          | EN: (manual) 浅い層: 小さい物体に適するが\n意味的情報が弱い
+          | Code: ax.text(0.5, 0.6, '浅い層: 小さい物体に適するが\n意味的情報が弱い', fontsize=11, ha='center')
+
+  Cell   3 | JP: 深い層: 意味的情報が強いが\n小さい物体を見落とす
+          | EN: (manual) 深い層: 意味的情報が強いが\n小さい物体を見落とす
+          | Code: ax.text(0.5, 0.35, '深い層: 意味的情報が強いが\n小さい物体を見落とす', fontsize=11, ha='center')
+
+  Cell   3 | JP: FPNの解決策
+          | EN: (manual) FPNの解決策
+          | Code: ax.text(0.5, 0.8, 'FPNの解決策', fontsize=14, ha='center', fontweight='bold', color='green')
+
+  Cell   3 | JP: 全ての解像度で\n強い意味的特徴を持つ\nピラミッドを構築
+          | EN: (manual) 全ての解像度で\n強い意味的特徴を持つ\nピラミッドを構築
+          | Code: ax.text(0.5, 0.5, '全ての解像度で\n強い意味的特徴を持つ\nピラミッドを構築', fontsize=12, ha='center')
+
+  Cell   3 | JP: マルチスケール問題とFPN
+          | EN: (manual) マルチスケール問題とFPN
+          | Code: plt.suptitle('マルチスケール問題とFPN', fontsize=16, fontweight='bold')
+
+==============================================================================================================
+ 99_skip_connections_v1.ipynb  (5 instances)
+==============================================================================================================
+  Cell   3 | JP: ResNet型: 加算
+          | EN: (manual) ResNet型: 加算
+          | Code: ax.text(0.3, 0.9, 'ResNet型: 加算', ha='center', fontsize=14, fontweight='bold')
+
+  Cell   3 | JP: y = F(x) + x\n入力と出力の次元が同じ
+          | EN: (manual) y = F(x) + x\n入力と出力の次元が同じ
+          | Code: ax.text(0.3, 0.1, 'y = F(x) + x\n入力と出力の次元が同じ', ha='center', fontsize=11)
+
+  Cell   3 | JP: U-Net型: 連結
+          | EN: (manual) U-Net型: 連結
+          | Code: ax.text(0.3, 0.9, 'U-Net型: 連結', ha='center', fontsize=14, fontweight='bold')
+
+  Cell   3 | JP: y = [Enc(x), Dec(x)]\nチャンネル数が増加
+          | EN: (manual) y = [Enc(x), Dec(x)]\nチャンネル数が増加
+          | Code: ax.text(0.3, 0.1, 'y = [Enc(x), Dec(x)]\nチャンネル数が増加', ha='center', fontsize=11)
+
+  Cell   3 | JP: スキップ接続の2つの種類
+          | EN: (manual) スキップ接続の2つの種類
+          | Code: plt.suptitle('スキップ接続の2つの種類', fontsize=16, fontweight='bold')
+
