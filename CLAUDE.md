@@ -65,3 +65,8 @@ notebooks/
 - Python 3.x, PyTorch, NumPy, Matplotlib, Seaborn
 - Jupyter Notebook (nbformat 4.4)
 - 追加ライブラリ: gensim, transformers, sentence-transformers, faiss-cpu, umap-learn 等
+
+## ノートブック & プロット規約
+
+- `japanize_matplotlib` は使わない——プロットのテキスト（タイトル、ラベル、凡例）はすべて英語にする
+- サブエージェントを並列でノートブック作成する場合、同時実行は 5 本まで。各バッチ後に git commit する
