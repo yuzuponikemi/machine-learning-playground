@@ -79,3 +79,5 @@ fix_repo_fonts.py
 **/*.png
 **/*.gif
 **/*.csv
+
+.claude/
