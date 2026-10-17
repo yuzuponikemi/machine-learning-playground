@@ -42,6 +42,8 @@
 - `SYLLABUS.md` — 総合シラバス（最優先で更新）
 - `README.md` — ノートブック数・ディレクトリ構成
 - `ML_LEARNING_PLAN.md` — 学習計画
+- `DIFFUSION_MODELS_CURRICULUM.md` — 拡散モデルカリキュラム（30-45）
+- `VLA_CURRICULUM.md` — VLA カリキュラム計画（170-174、未実装）
 
 ## プロジェクト構成
 
