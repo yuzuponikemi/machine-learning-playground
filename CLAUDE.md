@@ -3,7 +3,9 @@
 ## プロジェクト概要
 
 機械学習の基礎から応用までを体系的に学ぶための教育用Jupyterノートブック集。
-現在118以上のノートブックを収録。
+現在 151 ファイル（番号は150通り。21 のみ `21_shap_model_interpretation` と
+`21_feature_importance_deep_dive` の2本）を14ユニットに収録。
+ユニットの正本は `SYLLABUS.md`。
 
 ## 重要なルール
 
@@ -49,18 +51,24 @@
 
 ```
 notebooks/
-├── fundamentals/        # 00-13: ML基礎
-├── pytorch-basics/      # 35-36: PyTorch入門
-├── generative-models/   # 30-45: 生成モデル
-├── architectures/       # 50-65: ニューラルアーキテクチャ
-├── neural-engine/       # 70-76: ニューラルネットワーク内部
-├── 3d-vision/          # 80-88: 3Dコンピュータビジョン
-├── reinforcement-learning/ # 90-97: 強化学習
-├── optimization/        # 100-107: 最適化手法
-├── advanced-architectures/ # 110-117: 先端アーキテクチャ
-├── representation-learning/ # 130-145: 表現学習
-└── embeddings/          # 150-157: 埋め込み
+├── fundamentals/        # 00-12: ML基礎 (13)
+├── gbdt/                # 13-22: GBDT・Kaggle実践 (11)
+├── advanced/            # 23-28: 専門トピック (6)
+├── generative/          # 30-45: 生成モデル・拡散モデル (16)
+├── 3d-vision/           # 50-63: 3Dコンピュータビジョン・NeRF (14)
+├── neural-engine/       # 70-76: 誤差逆伝播の内部 (7)
+├── spatial-cnn/         # 80-102: 畳み込みと帰納バイアス (23)
+├── H_optimization/      # 110-116: 最適化手法 (7)
+├── sequence-models/     # 120-126: RNN/LSTM/Attention (7)
+├── spatiotemporal/      # 130-136: 時空間・動画生成 (7)
+├── world-models/        # 140-146: 世界モデル (7)
+├── embeddings/          # 150-157: 埋め込み (8)
+├── language-models/     # 160-167: 言語モデリング (8)
+└── image-morphing/      # 300-316: 画像変容と潜在空間 (17)
 ```
+
+`notebooks/` 直下の `data/` `catboost_info/` `submissions/` はノートブックではなく
+データ・学習ログ・提出物の置き場。
 
 ## 技術スタック
 
