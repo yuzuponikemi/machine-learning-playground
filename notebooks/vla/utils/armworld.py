@@ -129,11 +129,14 @@ class ArmWorld:
 
     def __init__(self, task: str = "reach", n_blocks: int = 3,
                  max_steps: int = 50, seed: int | None = None,
-                 image_obs: bool = True, action_space: str = "eef"):
+                 image_obs: bool = True, action_space: str = "eef",
+                 success_radius: float = SUCCESS_RADIUS):
         assert task in ("reach", "transport")
         assert action_space in ("eef", "joint")
         self.task = task
         self.action_space = action_space
+        # 許容誤差。小さくすると「精度が要るタスク」になる（171 で使う）
+        self.success_radius = success_radius
         self.n_blocks = n_blocks
         self.max_steps = max_steps
         self.image_obs = image_obs
@@ -237,7 +240,7 @@ class ArmWorld:
                 goal = self.block_pos[self.target_idx]
         dist = float(np.linalg.norm(eef - goal))
         reward = -dist
-        reached = dist < SUCCESS_RADIUS
+        reached = dist < self.success_radius
         if reached and not self.success:
             self.success = True
             reward += 1.0
