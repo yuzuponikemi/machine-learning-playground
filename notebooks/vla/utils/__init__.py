@@ -5,6 +5,7 @@
 from .armworld import (
     ArmWorld,
     ScriptedExpert,
+    DetourExpert,
     forward_kinematics,
     rollout,
     COLORS,
@@ -14,11 +15,13 @@ from .armworld import (
     IMG_SIZE,
     MAX_DELTA,
     MAX_EEF_STEP,
+    OBSTACLE_RADIUS,
+    OBSTACLE_FRACTION,
     SUCCESS_RADIUS,
 )
 
 __all__ = [
-    "ArmWorld", "ScriptedExpert", "forward_kinematics", "rollout",
+    "ArmWorld", "ScriptedExpert", "DetourExpert", "forward_kinematics", "rollout",
     "COLORS", "COLOR_NAMES", "REGIONS", "REGION_NAMES",
-    "IMG_SIZE", "MAX_DELTA", "MAX_EEF_STEP", "SUCCESS_RADIUS",
+    "IMG_SIZE", "MAX_DELTA", "MAX_EEF_STEP", "OBSTACLE_RADIUS", "OBSTACLE_FRACTION", "SUCCESS_RADIUS",
 ]

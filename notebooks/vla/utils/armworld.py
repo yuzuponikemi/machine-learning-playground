@@ -31,6 +31,8 @@ WORLD_HALF = 2.0                 # 描画範囲 [-2, 2] x [-2, 2]
 IMG_SIZE = 64                    # 観測画像の一辺
 MAX_DELTA = 0.20                 # 1ステップで動かせる関節角の上限 [rad]
 MAX_EEF_STEP = 0.12              # action_space="eef" のとき 1ステップで動かす距離の上限
+OBSTACLE_RADIUS = 0.30           # obstacle=True のときの障害物半径の上限（172 の多峰タスク）
+OBSTACLE_FRACTION = 0.25         # 障害物半径 = この割合 x 初期EEFと目標の距離
 SUCCESS_RADIUS = 0.15            # 目標に到達したと見なす距離
 
 # ブロックの色（名前 -> RGB）。言語指示でこの名前を使う。
@@ -130,13 +132,16 @@ class ArmWorld:
     def __init__(self, task: str = "reach", n_blocks: int = 3,
                  max_steps: int = 50, seed: int | None = None,
                  image_obs: bool = True, action_space: str = "eef",
-                 success_radius: float = SUCCESS_RADIUS):
+                 success_radius: float = SUCCESS_RADIUS,
+                 obstacle: bool = False):
         assert task in ("reach", "transport")
         assert action_space in ("eef", "joint")
         self.task = task
         self.action_space = action_space
         # 許容誤差。小さくすると「精度が要るタスク」になる（171 で使う）
         self.success_radius = success_radius
+        # 障害物を置くと「左右どちらから回ってもよい」= 多峰性のタスクになる（172 で使う）
+        self.obstacle = obstacle
         self.n_blocks = n_blocks
         self.max_steps = max_steps
         self.image_obs = image_obs
@@ -165,6 +170,7 @@ class ArmWorld:
         self.gripper = 0.0
         self.t = 0
         self.success = False
+        self.collided = False
         self._sample_blocks()
 
         if self.task == "reach":
@@ -179,6 +185,19 @@ class ArmWorld:
             self.region = REGION_NAMES[int(self.rng.integers(len(REGION_NAMES)))]
             self.instruction = (f"move the {self.target_color} block "
                                 f"to the {self.region}")
+
+        if self.obstacle:
+            # 初期 EEF と目標の中点に障害物を置く（必ず直線経路を塞ぐ）。
+            # 半径は両者の距離に比例させる。固定半径にすると、近い配置では
+            # 障害物が目標そのものを覆って解けなくなる。
+            _, eef0 = forward_kinematics(self.theta)
+            d0 = float(np.linalg.norm(eef0 - self.target))
+            self.obstacle_pos = 0.5 * (eef0 + self.target)
+            self.obstacle_radius = float(np.clip(OBSTACLE_FRACTION * d0,
+                                                 0.10, OBSTACLE_RADIUS))
+        else:
+            self.obstacle_pos = None
+            self.obstacle_radius = 0.0
         return self._obs()
 
     @property
@@ -198,11 +217,18 @@ class ArmWorld:
         return obs
 
     def state_vec(self) -> np.ndarray:
-        """方針ネットワークに渡す低次元状態（proprio + 目標の相対位置）。"""
+        """方針ネットワークに渡す低次元状態。
+
+        obstacle=False : proprio(7) + 目標の相対位置(2) = 9次元
+        obstacle=True  : さらに障害物の相対位置(2) を足して 11次元
+        """
         o = self._obs()
         _, eef = forward_kinematics(self.theta)
         rel = self.target - eef
-        return np.concatenate([o["proprio"], rel]).astype(np.float32)
+        parts = [o["proprio"], rel]
+        if self.obstacle and self.obstacle_pos is not None:
+            parts.append(self.obstacle_pos - eef)
+        return np.concatenate(parts).astype(np.float32)
 
     def step(self, action) -> tuple[dict, float, bool, dict]:
         a = np.asarray(action, dtype=float).reshape(-1)
@@ -241,6 +267,14 @@ class ArmWorld:
         dist = float(np.linalg.norm(eef - goal))
         reward = -dist
         reached = dist < self.success_radius
+
+        if self.obstacle and self.obstacle_pos is not None:
+            if np.linalg.norm(eef - self.obstacle_pos) < self.obstacle_radius:
+                # 障害物に触れたら即失敗（避けることが必須になる）
+                self.collided = True
+                self.t += 1
+                return self._obs(), reward - 1.0, True, {
+                    "distance": dist, "success": False, "collided": True}
         if reached and not self.success:
             self.success = True
             reward += 1.0
@@ -248,7 +282,8 @@ class ArmWorld:
         self.t += 1
         done = bool(self.t >= self.max_steps or reached)
         return self._obs(), reward, done, {"distance": dist,
-                                           "success": self.success}
+                                           "success": self.success,
+                                           "collided": self.collided}
 
     # -- 描画 --------------------------------------------------------------
     def render(self, size: int = IMG_SIZE) -> np.ndarray:
@@ -256,6 +291,8 @@ class ArmWorld:
         # 目標領域（transport のときだけ薄く塗る）
         if self.task == "transport" and self.region is not None:
             _draw_disc(img, REGIONS[self.region], 0.30, (205, 205, 225))
+        if self.obstacle and self.obstacle_pos is not None:
+            _draw_disc(img, self.obstacle_pos, self.obstacle_radius, (70, 70, 70))
         for pos, cname in zip(self.block_pos, self.block_colors):
             _draw_disc(img, pos, 0.16, COLORS[cname])
         elbow, eef = forward_kinematics(self.theta)
@@ -319,6 +356,63 @@ class ScriptedExpert:
         if self.noise > 0:
             a_norm = np.clip(a_norm + self.rng.normal(0, self.noise, size=2), -1.0, 1.0)
         return np.concatenate([a_norm, [grip]])
+
+
+class DetourExpert(ScriptedExpert):
+    """障害物を左右どちらかから回り込む専門家（172 の多峰デモ生成用）。
+
+    同じ初期状態に対して `side` を変えると**別の正解**が得られる。
+    これが「1つの状態に正解が複数ある」= 多峰性のある教師データになる。
+
+    アルゴリズムは接線追従（tangent bug の簡易版）:
+      1. 目標への直線が障害物に当たるか判定する
+      2. 当たらなければ目標へ直進
+      3. 当たるなら障害物のまわりを指定の向きに接線方向へ回る
+         （少し外向き成分を足してクリアランスを保つ）
+    """
+
+    def __init__(self, side: str = "left", margin: float = 0.10,
+                 outward: float = 0.25, **kwargs):
+        super().__init__(**kwargs)
+        assert side in ("left", "right")
+        self.side = side
+        self.sign = +1.0 if side == "left" else -1.0
+        self.margin = margin
+        self.outward = outward
+
+    def blocked(self, eef: np.ndarray, env: "ArmWorld") -> bool:
+        """eef から目標への直線が障害物に当たるか。"""
+        to_target = env.target - eef
+        length = float(np.linalg.norm(to_target)) + 1e-9
+        unit = to_target / length
+        to_obs = env.obstacle_pos - eef
+        along = float(to_obs @ unit)
+        perpendicular = float(np.linalg.norm(to_obs - along * unit))
+        clearance = env.obstacle_radius + self.margin
+        return (0.0 < along < length + clearance) and perpendicular < clearance
+
+    def act(self, env: "ArmWorld") -> np.ndarray:
+        _, eef = forward_kinematics(env.theta)
+        if env.obstacle_pos is None:
+            return super().act(env)
+        if self.blocked(eef, env):
+            radial = eef - env.obstacle_pos
+            r_norm = float(np.linalg.norm(radial)) + 1e-9
+            tangential = np.array([-radial[1], radial[0]]) / r_norm * self.sign
+            desired = tangential + self.outward * radial / r_norm
+            desired = desired / (np.linalg.norm(desired) + 1e-9) * MAX_EEF_STEP
+        else:
+            desired = env.target - eef
+        if env.action_space == "eef":
+            a_norm = np.clip(self.gain * desired / MAX_EEF_STEP, -1.0, 1.0)
+        else:
+            J = self.jacobian(env.theta)
+            d = self.gain * (J.T @ np.linalg.solve(
+                J @ J.T + self.damping * np.eye(2), desired))
+            a_norm = np.clip(d / MAX_DELTA, -1.0, 1.0)
+        if self.noise > 0:
+            a_norm = np.clip(a_norm + self.rng.normal(0, self.noise, size=2), -1.0, 1.0)
+        return np.concatenate([a_norm, [0.0]])
 
 
 def rollout(env: ArmWorld, policy, max_steps: int | None = None,
