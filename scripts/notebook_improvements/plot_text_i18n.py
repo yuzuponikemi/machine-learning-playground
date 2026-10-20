@@ -28,6 +28,8 @@ label= など）に渡されている文字列リテラルだけを書き換え�
   - f-string 内の `{{` `}}`（エスケープされた波括弧）を含む文字列は自動置換しない
     （置換すると `{` 1個になり式として解釈されてしまう）。DEFER として報告されるので手で直す。
   - 置換後は必ず各セルを ast.parse で検証し、壊れるセルはスキップする。
+  - 英訳にクォートが含まれる場合（"Zipf's Law" 等）は自動で逃がす。逃がさないと
+    リテラルが途中で閉じてセルが構文エラーになる（実際に踏んだ）。
   - 既存の出力セル（描画済み画像）は書き換えないので、図が英語になるのは次回実行時。
 """
 import json, ast, re, sys, collections
@@ -81,15 +83,28 @@ def _nl(s):
     return (s.replace('\\', '\\\\').replace('\n', '\\n')
              .replace('\t', '\\t').replace('\r', '\\r'))
 
+def _escape_quotes(s):
+    """置換後の文字列に含まれるクォートを逃がす。
+
+    これを忘れると、英訳に含まれる `\'`（例: "Zipf\'s Law"）が
+    シングルクォートのリテラルを途中で閉じてしまい、セルが構文エラーになる。
+    `\\'` は "..." の中でも '...' の中でも有効なので、両方とも常に逃がしてよい。
+    """
+    return s.replace("'", "\\'").replace('"', '\\"')
+
+
 def variants(s):
     """ソース上でその文字列がどう書かれている可能性があるか（素のまま / \n 等をエスケープ /
-    さらにクォートもエスケープ）を順に返す。(変換関数, 文字列) の組。"""
+    さらにクォートもエスケープ）を順に返す。(変換関数, 文字列) の組。
+
+    変換関数は置換後の文字列に適用する。どの経路でもクォートは必ず逃がす。
+    """
     base = _nl(s)
     return [
-        (lambda x: x, s),
-        (_nl, base),
-        (lambda x: _nl(x).replace("'", "\\'"), base.replace("'", "\\'")),
-        (lambda x: _nl(x).replace('"', '\\"'), base.replace('"', '\\"')),
+        (lambda x: _escape_quotes(x), s),
+        (lambda x: _escape_quotes(_nl(x)), base),
+        (lambda x: _escape_quotes(_nl(x)), base.replace("'", "\\'")),
+        (lambda x: _escape_quotes(_nl(x)), base.replace('"', '\\"')),
     ]
 
 def apply(p, mapping):
