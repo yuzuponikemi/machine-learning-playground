@@ -3,7 +3,7 @@
 ## プロジェクト概要
 
 機械学習の基礎から応用までを体系的に学ぶための教育用Jupyterノートブック集。
-現在 153 ファイル（番号は152通り。21 のみ `21_shap_model_interpretation` と
+現在 154 ファイル（番号は153通り。21 のみ `21_shap_model_interpretation` と
 `21_feature_importance_deep_dive` の2本）を15ユニットに収録。
 ユニットの正本は `SYLLABUS.md`。
 
@@ -64,7 +64,7 @@ notebooks/
 ├── world-models/        # 140-146: 世界モデル (7)
 ├── embeddings/          # 150-157: 埋め込み (8)
 ├── language-models/     # 160-167: 言語モデリング (8)
-├── vla/                 # 170-174: VLA 視覚・言語・行動 (2/5 実装済み)
+├── vla/                 # 170-174: VLA 視覚・言語・行動 (3/5 実装済み)
 └── image-morphing/      # 300-316: 画像変容と潜在空間 (17)
 ```
 
