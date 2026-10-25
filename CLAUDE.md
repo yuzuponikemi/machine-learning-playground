@@ -60,7 +60,9 @@ Markdown セルや `print` の日本語は触らない。置換後は各セル�
 - `README.md` — ノートブック数・ディレクトリ構成
 - `ML_LEARNING_PLAN.md` — 学習計画
 - `DIFFUSION_MODELS_CURRICULUM.md` — 拡散モデルカリキュラム（30-45）
-- `VLA_CURRICULUM.md` — VLA カリキュラム計画（170-174、未実装）
+- `VLA_CURRICULUM.md` — VLA カリキュラム計画（170-174、実装済み）
+- `GENERATIVE_TAXONOMY_CURRICULUM.md` — 生成モデルの分類を完成させる計画
+  （46-49, 147, Unit 16-18 = 180-186 / 190-196 / 200-206、未実装）
 
 ## プロジェクト構成
 
