@@ -34,9 +34,24 @@
 ### 図（matplotlib/seaborn）の言語ルール
 
 - **図のタイトル、軸ラベル、凡例、アノテーション等はすべて英語で記載すること**
-- ノートブック本文（Markdownセル）の解説は日本語でOK
+- ノートブック本文（Markdownセル）の解説は日本語でOK。コード内のコメント・docstring・
+  `print` 出力も日本語でよい（規約の対象は**図に描かれるテキスト**だけ）
 - `japanize_matplotlib` は使用禁止（日本語フォントの表示が不安定なため）
+- **手書きの日本語フォント設定も禁止**（`def setup_japanese_font()` /
+  `rcParams['font.family'] = 'Hiragino Sans'` 等）。japanize と同じ問題を持つ
 - 理由：日本語を図に入れると表示崩れ・ずれが発生しやすい
+
+**現状（2026-10-25 時点で全ノートブック適合済み）**:
+日本語の図テキスト 0件、`japanize_matplotlib` 0件、手書きフォント設定 0件。
+既存ノートブックを一括で直すツールが `scripts/notebook_improvements/` にある。
+
+| ツール | 用途 |
+|---|---|
+| `plot_text_i18n.py` | 図テキストの抽出と英語化（`check` / `extract` / `apply`） |
+| `remove_jp_font_setup.py` | 日本語フォント設定の除去（図テキストが英語化済みのものだけ） |
+
+どちらも AST の位置情報で matplotlib のテキスト設定呼び出しだけを対象にするので、
+Markdown セルや `print` の日本語は触らない。置換後は各セルを `ast.parse` で検証する。
 
 ### ドキュメント整合性
 
