@@ -3,7 +3,7 @@
 ## プロジェクト概要
 
 機械学習の基礎から応用までを体系的に学ぶための教育用Jupyterノートブック集。
-現在 156 ファイル（番号は155通り。21 のみ `21_shap_model_interpretation` と
+現在 157 ファイル（番号は156通り。21 のみ `21_shap_model_interpretation` と
 `21_feature_importance_deep_dive` の2本）を15ユニットに収録。
 ユニットの正本は `SYLLABUS.md`。
 
@@ -71,7 +71,7 @@ notebooks/
 ├── fundamentals/        # 00-12: ML基礎 (13)
 ├── gbdt/                # 13-22: GBDT・Kaggle実践 (11)
 ├── advanced/            # 23-28: 専門トピック (6)
-├── generative/          # 30-45: 生成モデル・拡散モデル (16)
+├── generative/          # 30-47: 生成モデル・拡散モデル・MDN (17)
 ├── 3d-vision/           # 50-63: 3Dコンピュータビジョン・NeRF (14)
 ├── neural-engine/       # 70-76: 誤差逆伝播の内部 (7)
 ├── spatial-cnn/         # 80-102: 畳み込みと帰納バイアス (23)
