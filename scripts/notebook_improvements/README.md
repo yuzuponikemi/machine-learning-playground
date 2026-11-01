@@ -292,3 +292,28 @@ machine-learning-playground/
 **作成日**: 2025年12月13日
 **最終更新**: 2025年12月13日
 **バージョン**: 2.0
+
+## plot_text_i18n.py — 図テキストの英語化
+
+`CLAUDE.md` の「図のテキストはすべて英語／`japanize_matplotlib` 禁止」を既存ノートブックに
+適用するためのツール。Markdown セルと `print` 出力の日本語は触らず、matplotlib の
+テキスト設定呼び出し（`set_title` / `set_xlabel` / `text` / `annotate` / `label=` 等）に
+渡された文字列リテラルだけを AST の位置情報で書き換える。
+
+```bash
+# 対象を数える
+python3 scripts/notebook_improvements/plot_text_i18n.py check notebooks/<unit>/*.ipynb
+
+# 日本語を抽出（翻訳の下書き用。1行1件の JSON）
+python3 scripts/notebook_improvements/plot_text_i18n.py extract notebooks/<unit>/*.ipynb
+
+# {"日本語": "English"} の対応表を適用（japanize の import も削除される）
+python3 scripts/notebook_improvements/plot_text_i18n.py apply map.json notebooks/<unit>/*.ipynb
+```
+
+適用後は `check` が 0 になることを確認する。`DEFER:` と報告された文字列
+（f-string の `{{` を含むもの等）は自動置換されないので手で直す。
+
+**進捗**: `japanize_matplotlib` を import していた 31 本は対応済み（0 本）。
+japanize を使わずに日本語の図テキストを持つノートブックが **69 本・2,018 箇所** 残っている
+（これらは日本語フォントが読み込まれないため、現状は図が豆腐表示になっている）。
