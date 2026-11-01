@@ -17,8 +17,8 @@ PyTorchを使った拡散モデル・画像生成AIの理論と実装
 
 #### 📐 数理統計の前提知識（別リポジトリ）
 
-数理統計（統計検定準1級の範囲）は [`statspg`](https://github.com/yuzuponikemi/statspg)（32本、
-`統計学実践ワークブック` 全32章に 1:1 対応）が担います。
+数理統計（統計検定準1級の範囲）は [`statspg`](https://github.com/yuzuponikemi/statspg)（33本。
+`統計学実践ワークブック` 全32章に 1:1 対応し、因果推論を第33章として追加）が担います。
 2つは**補完関係**で、統合はしていません。
 
 - 対応表と逆引き: **[STATS_PREREQUISITES.md](STATS_PREREQUISITES.md)**
