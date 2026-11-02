@@ -61,6 +61,10 @@ models/
 catboost_info/
 **/catboost_info/
 notebooks/generative/data/
+*.pt
+*.pth
+*.bin
+*.onnx
 # Local execution logs & analysis scripts
 execution_status.json
 clean_errors.txt
